@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMC PORTAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1> 🏢FG LMC DIRECTORY</h1>
+        <p>Operations • Inventory • Shipment • Tracking</p>
+        <div id="datetime"></div>
+    </header>
+
+    <div class="portal-grid">
+
+        <!-- INVENTORY -->
+        <div class="card" onclick="toggleMenu('inventoryMenu')">
+            <span>📦</span>
+            <h3>OPERATIONS</h3>
+            <p>Click to View Links</p>
+
+            <div id="inventoryMenu" class="submenu">
+                <a href="https://docs.google.com/spreadsheets/d/1wDP9HmjA_eS2gK0dJXcINpfEZIvPe2jvh9Tz_43dEc4/edit?usp=sharing" target="_blank">FG NATIONAL TRACKER</a>
+                <a href="https://docs.google.com/spreadsheets/d/1ke_J6OJQhsbl3oTyDkpj5qjvFS2td31_/edit?usp=sharing&ouid=111559221031752273853&rtpof=true&sd=true" target="_blank">INVENTORY OVERALL PROJECT MONITORING</a>
+                <a href="https://docs.google.com/spreadsheets/d/1XvKHbGQEw9GaaD2PipoLYZanyvIDe526UDgSUaLBonI/edit?usp=sharing" target="_blank">SHIPMENT LOAD PLAN</a>
+                <a href="https://docs.google.com/spreadsheets/d/1XvKHbGQEw9GaaD2PipoLYZanyvIDe526UDgSUaLBonI/edit?usp=sharing" target="_blank">MATERIAL CODES</a>
+            </div>
+        </div>
+
+        <!-- FORMS -->
+        <div class="card" onclick="toggleMenu('formsMenu')">
+            <span>📝</span>
+            <h3>Forms</h3>
+            <p>Click to View Links</p>
+
+            <div id="formsMenu" class="submenu">
+                <a href="PASTE_LINK_HERE" target="_blank">Material Tranfer form (MTF) Tracker</a>
+                <a href="PASTE_LINK_HERE" target="_blank">SRF Tracker</a>
+                <a href="PASTE_LINK_HERE" target="_blank">Transfer Requests</a>
+            </div>
+        </div>
+
+        <!-- DASHBOARD -->
+        <div class="card" onclick="toggleMenu('dashboardMenu')">
+            <span>📊</span>
+            <h3>Dashboard</h3>
+            <p>Click to View Links</p>
+
+            <div id="dashboardMenu" class="submenu">
+                <a href="PASTE_LINK_HERE" target="_blank">Inventory Dashboard</a>
+                <a href="PASTE_LINK_HERE" target="_blank">Low Stock Monitoring</a>
+                <a href="PASTE_LINK_HERE" target="_blank">Monthly Reports</a>
+                <a href="PASTE_LINK_HERE" target="_blank">KPI Dashboard</a>
+            </div>
+        </div>
+
+        <!-- DIRECTORY -->
+        <div class="card" onclick="toggleMenu('directoryMenu')">
+            <span>📁</span>
+
+            <h3>Directory</h3>
+            <p>Click to View Links</p>
+
+            <div id="directoryMenu" class="submenu">
+                <a href="PASTE_LINK_HERE" target="_blank">Employee Directory</a>
+                <a href="PASTE_LINK_HERE" target="_blank">Material Masterlist</a>
+                <a href="PASTE_LINK_HERE" target="_blank">Vendor List</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
