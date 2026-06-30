@@ -8,8 +8,15 @@
 body{
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #4facfe, #00f2fe);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .container{
