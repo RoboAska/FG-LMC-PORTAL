@@ -114,15 +114,25 @@ header p{
     padding:20px;
     cursor:pointer;
     box-shadow:0 8px 32px rgba(0,0,0,0.2);
-    transition:all 0.4s ease;
+    transition:all 0.3s ease;
     animation:fadeUp 0.8s ease forwards;
+animation:
+    fadeUp 0.8s ease forwards,
+    cardGlow 4s ease-in-out infinite;
 }
 
 .card:hover{
     transform:translateY(-10px) scale(1.03);
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+    transform:translateY(-8px);
+}
+
+.card.active{
+    transform:translateY(-8px) scale(1.03);
     box-shadow:
-        0 0 20px rgba(59,130,246,0.6),
-        0 0 40px rgba(6,182,212,0.4);
+        0 0 15px rgba(255,255,255,0.3),
+        0 0 30px rgba(59,130,246,0.5),
+        0 0 50px rgba(6,182,212,0.4);
 }
 
 .card span{
@@ -159,4 +169,53 @@ header p{
 .submenu a:hover{
     background:rgba(255,255,255,0.25);
     transform:scale(1.02);
+}
+#searchInput{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:20px auto;
+    padding:15px 20px;
+    border:none;
+    border-radius:50px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    color:white;
+    font-size:16px;
+    outline:none;
+    transition:all 0.3s ease;
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.15);
+}
+
+.search-container{
+    position:relative;
+    max-width:700px;
+    margin:20px auto;
+}
+
+.search-icon{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+    font-size:18px;
+    pointer-events:none;
+}
+
+#searchInput{
+    padding-left:50px;
+}
+
+#searchInput::placeholder{
+    color:rgba(255,255,255,0.7);
+}
+
+#searchInput:focus{
+    background:rgba(255,255,255,0.2);
+    box-shadow:
+        0 0 10px rgba(59,130,246,0.5),
+        0 0 20px rgba(6,182,212,0.3);
 }
