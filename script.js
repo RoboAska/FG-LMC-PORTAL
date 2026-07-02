@@ -10,18 +10,18 @@ function toggleMenu(menuId){
 
     const card = menu.closest('.card');
 
-    document.querySelectorAll('.card').forEach(c => {
+    if(menu.style.display === "block"){
 
-        if(c !== card){
+        menu.style.display = "none";
+        card.classList.remove('active');
 
-            c.classList.remove('active');
+    }else{
 
-            const submenu = c.querySelector('.submenu');
+        menu.style.display = "block";
+        card.classList.add('active');
 
-            if(submenu){
-                submenu.style.display = "none";
-            }
-        }
+    }
+}
 
     });
 
@@ -76,19 +76,7 @@ function searchCards(){
         .getElementById("searchInput")
         .value
         .toLowerCase();
-
-    document.querySelectorAll(".card").forEach(card => {
-
-        const title = card.querySelector("h3")?.textContent.toLowerCase() || "";
-        const desc = card.querySelector("p")?.textContent.toLowerCase() || "";
-
-        card.style.display =
-            title.includes(filter) || desc.includes(filter)
-            ? ""
-            : "none";
-    });
-}
-
+    
 // Allow submenu links to be clicked
 document.querySelectorAll('.submenu a').forEach(link => {
     link.addEventListener('click', function(e){
