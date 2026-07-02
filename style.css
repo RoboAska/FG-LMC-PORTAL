@@ -302,9 +302,11 @@ header p{
    SUBMENU
 ========================================== */
 .submenu{
-    display:none;
+    max-height:0;
+    overflow:hidden;
     margin-top:15px;
     text-align:center;
+    transition:max-height 0.4s ease;
 }
 
 .submenu a{
@@ -321,6 +323,9 @@ header p{
 .submenu a:hover{
     background:rgba(255,255,255,.25);
     transform:scale(1.02);
+}
+.card.active .submenu{
+    max-height:500px;
 }
 
 /* ==========================================
