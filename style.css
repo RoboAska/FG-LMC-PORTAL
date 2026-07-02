@@ -399,3 +399,21 @@ footer a:hover{
         font-size:14px;
     }
 }
+.card{
+    position:relative;
+}
+
+.submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    margin-top:10px;
+    z-index:999;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+    border-radius:15px;
+    padding:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
