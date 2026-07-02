@@ -20,3 +20,10 @@ function toggleMenu(menuId){
         card.classList.add('active');
     }
 }
+const lastUpdated = document.getElementById("lastUpdated");
+
+if(lastUpdated){
+    lastUpdated.textContent =
+        "Last Updated: " +
+        new Date().toLocaleDateString();
+}
