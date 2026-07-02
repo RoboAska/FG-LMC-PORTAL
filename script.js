@@ -13,29 +13,12 @@ function toggleMenu(menuId){
     document.querySelectorAll('.card').forEach(c => {
 
         if(c !== card){
-
             c.classList.remove('active');
-
-            const submenu = c.querySelector('.submenu');
-
-            if(submenu){
-                submenu.style.display = "none";
-            }
         }
 
     });
 
-    if(menu.style.display === "block"){
-
-        menu.style.display = "none";
-        card.classList.remove('active');
-
-    }else{
-
-        menu.style.display = "block";
-        card.classList.add('active');
-
-    }
+    card.classList.toggle('active');
 }
 
 // ==========================
@@ -79,8 +62,11 @@ function searchCards(){
 
     document.querySelectorAll(".card").forEach(card => {
 
-        const title = card.querySelector("h3")?.textContent.toLowerCase() || "";
-        const desc = card.querySelector("p")?.textContent.toLowerCase() || "";
+        const title =
+            card.querySelector("h3")?.textContent.toLowerCase() || "";
+
+        const desc =
+            card.querySelector("p")?.textContent.toLowerCase() || "";
 
         card.style.display =
             title.includes(filter) || desc.includes(filter)
@@ -89,24 +75,16 @@ function searchCards(){
     });
 }
 
-// Prevent card click when clicking submenu links
+// ==========================
+// ALLOW LINKS TO BE CLICKED
+// ==========================
+
 document.querySelectorAll('.submenu a').forEach(link => {
-    link.addEventListener('click', function(e) {
+
+    link.addEventListener('click', function(e){
+
         e.stopPropagation();
-    });
-});
-document.querySelectorAll('.card').forEach(card => {
 
-    card.addEventListener('click', function(e){
-
-        // Ignore clicks on links
-        if(e.target.tagName === 'A') return;
-
-        const menuId = this.dataset.menu;
-
-        if(menuId){
-            toggleMenu(menuId);
-        }
     });
 
 });
