@@ -10,6 +10,9 @@ function toggleMenu(menuId){
         }
     });
 
+    document.getElementById("lastUpdated").textContent =
+    "Last Updated: " + new Date().toLocaleDateString();
+
     if(menu.style.display === "block"){
         menu.style.display = "none";
         card.classList.remove('active');
