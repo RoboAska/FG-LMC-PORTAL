@@ -88,3 +88,19 @@ document.querySelectorAll('.submenu a').forEach(link => {
     });
 
 });
+
+document.querySelectorAll('.card').forEach(card => {
+
+    card.addEventListener('click', function(e){
+
+        if(e.target.tagName === 'A') return;
+
+        const menuId = this.dataset.menu;
+
+        if(menuId){
+            toggleMenu(menuId);
+        }
+
+    });
+
+});
