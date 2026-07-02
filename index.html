@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FG LMC</title>
+    <title>FG LMC Directory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,10 +15,36 @@
 
     <header>
         <h1>FG LMC OPERATIONS PORTAL</h1>
-        <p><i>Centralized Access for Operations, Inventory, Logistics & Support</i>i></p>
+        <p><i>Centralized Access for Operations, Inventory, Logistics & Support</i></p>
         <div id="datetime"></div>
     </header>     
-	
+	<div class="stats-container">
+
+    <div class="stat-card">
+        <div class="stat-icon">🔗</div>
+        <h2 id="totalLinks">0</h2>
+        <p>Total Links</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">📊</div>
+        <h2 id="trackerCount">0</h2>
+        <p>Trackers</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">🛠️</div>
+        <h2 id="supportCount">0</h2>
+        <p>Support Systems</p>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">🚚</div>
+        <h2 id="logisticCount">0</h2>
+        <p>Logistics Tools</p>
+    </div>
+
+</div>
 	<input
     type="text"
     id="searchInput"
@@ -44,7 +70,7 @@
         <!-- TRACKERS -->
         <div class="card" onclick="toggleMenu('formsMenu')">
             <span>📝</span>
-            <h3>LMC TRACKERS</h3>
+            <h3>TRACKING & REPORTS</h3>
             <p>Click to View Links</p>
 
             <div id="formsMenu" class="submenu">
@@ -54,6 +80,9 @@
 				<a href="https://docs.google.com/spreadsheets/d/10tJiJwd55xCB0n6RU3T9mCRfm8dZ_j9igjKr5tAHzE8/edit?usp=sharingE" target="_blank">Work Order Creation</a>
 				<a href="PASTE LINK HERE" target="_blank">SLZ Pole Tracker</a>
 				<a href="PASTE LINK HERE" target="_blank">VIZ Pole Tracker</a>
+				<a href="#" class="tracker-link">Material Transfer Form</a>
+				<a href="#" class="tracker-link">SRF Tracker</a>
+				<a href="#" class="tracker-link">MRR Status</a>
 			
             </div>
         </div>
@@ -61,7 +90,7 @@
         <!-- SUPPORT -->
         <div class="card" onclick="toggleMenu('dashboardMenu')">
             <span>📊</span>
-            <h3>SUPPORT</h3>
+            <h3>SUPPORT SERVICES</h3>
             <p>Click to View Links</p>
 
             <div id="dashboardMenu" class="submenu">
@@ -77,7 +106,7 @@
         <div class="card" onclick="toggleMenu('directoryMenu')">
             <span>📁</span>
 
-            <h3>LOGISTIC</h3>
+            <h3>LOGISTICS</h3>
             <p>Click to View Links</p>
 
             <div id="directoryMenu" class="submenu">
@@ -133,7 +162,7 @@
 	<div class="card" onclick="toggleMenu('shipment')">
             <span>📤</span>
 
-            <h3>LOGISTIC</h3>
+            <h3>LOGISTICS</h3>
             <p>Click to View Links</p>
 
             <div id="shipment" class="submenu">
@@ -152,6 +181,12 @@
 </div>
 
 <script src="script.js"></script>
+
+<footer class="footer">
+    <p>FG LMC Directory v1.0</p>
+    <p>Maintained by Operations Team</p>
+    <p>© 2026 FiberHome. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
