@@ -72,19 +72,19 @@ updateDateTime();
 
 function searchCards(){
 
-    const input = document.getElementById("searchInput");
-    const filter = input.value.toLowerCase();
+    const filter = document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase();
 
-    const cards = document.querySelectorAll(".card");
+    document.querySelectorAll(".card").forEach(card => {
 
-    cards.forEach(card => {
+        const title = card.querySelector("h3")?.textContent.toLowerCase() || "";
+        const desc = card.querySelector("p")?.textContent.toLowerCase() || "";
 
-        const text = card.textContent.toLowerCase();
-
-        if(text.includes(filter)){
-            card.style.display = "";
-        }else{
-            card.style.display = "none";
-        }
-
+        card.style.display =
+            title.includes(filter) || desc.includes(filter)
+            ? ""
+            : "none";
     });
+}
