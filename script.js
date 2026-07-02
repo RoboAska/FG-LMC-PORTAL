@@ -89,25 +89,3 @@ function searchCards(){
 
     });
 }
-
-// ==========================
-// FOOTER LAST UPDATED
-// ==========================
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const lastUpdated = document.getElementById("lastUpdated");
-
-    if(lastUpdated){
-
-        lastUpdated.textContent =
-            "Last Updated: " +
-            new Date().toLocaleDateString("en-US",{
-                year:"numeric",
-                month:"long",
-                day:"numeric"
-            });
-
-    }
-
-});
