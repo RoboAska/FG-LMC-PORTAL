@@ -26,4 +26,24 @@ if(lastUpdated){
     lastUpdated.textContent =
         "Last Updated: " +
         new Date().toLocaleDateString();
+
+    <footer class="footer">
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+            <h3>FG LMC Operations Command Center</h3>
+            <p>Integrated Operations, Logistics, Warehouse & Resource Management</p>
+        </div>
+
+        <div class="footer-status">
+            <span class="status-dot"></span>
+            <span>System Operational</span>
+        </div>
+
+        <div class="footer-info">
+            <p>Version 1.0.0</p>
+            <p id="lastUpdated"></p>
+        </div>
+    </div>
+</footer>
 }
