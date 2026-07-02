@@ -88,3 +88,9 @@ document.querySelectorAll('.submenu a').forEach(link => {
     });
 
 });
+
+document.querySelectorAll('.submenu a').forEach(link => {
+    link.addEventListener('click', function(e){
+        e.stopPropagation();
+    });
+});
