@@ -88,3 +88,10 @@ function searchCards(){
             : "none";
     });
 }
+
+// Prevent card click when clicking submenu links
+document.querySelectorAll('.submenu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
