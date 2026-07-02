@@ -29,30 +29,6 @@ function updateDateTime(){
 setInterval(updateDateTime,1000);
 updateDateTime();
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    const operations =
-        document.querySelectorAll(".operations-link").length;
-
-    const trackers =
-        document.querySelectorAll(".tracker-link").length;
-
-    const support =
-        document.querySelectorAll(".support-link").length;
-
-    const logistics =
-        document.querySelectorAll(".logistic-link").length;
-
-    const total =
-        operations + trackers + support + logistics;
-
-    document.getElementById("totalLinks").textContent = total;
-    document.getElementById("trackerCount").textContent = trackers;
-    document.getElementById("supportCount").textContent = support;
-    document.getElementById("logisticCount").textContent = logistics;
-
-});
-
 /* Search Function */
 function searchCards(){
 
