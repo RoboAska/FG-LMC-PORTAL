@@ -13,12 +13,29 @@ function toggleMenu(menuId){
     document.querySelectorAll('.card').forEach(c => {
 
         if(c !== card){
+
             c.classList.remove('active');
+
+            const submenu = c.querySelector('.submenu');
+
+            if(submenu){
+                submenu.style.display = "none";
+            }
         }
 
     });
 
-    card.classList.toggle('active');
+    if(menu.style.display === "block"){
+
+        menu.style.display = "none";
+        card.classList.remove('active');
+
+    }else{
+
+        menu.style.display = "block";
+        card.classList.add('active');
+
+    }
 }
 
 // ==========================
@@ -62,11 +79,8 @@ function searchCards(){
 
     document.querySelectorAll(".card").forEach(card => {
 
-        const title =
-            card.querySelector("h3")?.textContent.toLowerCase() || "";
-
-        const desc =
-            card.querySelector("p")?.textContent.toLowerCase() || "";
+        const title = card.querySelector("h3")?.textContent.toLowerCase() || "";
+        const desc = card.querySelector("p")?.textContent.toLowerCase() || "";
 
         card.style.display =
             title.includes(filter) || desc.includes(filter)
@@ -75,20 +89,7 @@ function searchCards(){
     });
 }
 
-// ==========================
-// ALLOW LINKS TO BE CLICKED
-// ==========================
-
-document.querySelectorAll('.submenu a').forEach(link => {
-
-    link.addEventListener('click', function(e){
-
-        e.stopPropagation();
-
-    });
-
-});
-
+// Allow submenu links to be clicked
 document.querySelectorAll('.submenu a').forEach(link => {
     link.addEventListener('click', function(e){
         e.stopPropagation();
