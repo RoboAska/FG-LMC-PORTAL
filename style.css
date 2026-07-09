@@ -1,0 +1,820 @@
+/* ==========================================
+   FG LMC Operations Command Center
+   Dashboard v3.0
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+    position:relative;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(34,197,94,.18), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(16,185,129,.15), transparent 40%),
+        linear-gradient(135deg,#02170F,#083324,#14532D);
+
+    background-size:400% 400%;
+
+    animation:bgMove 20s ease infinite;
+
+}
+
+/* ==========================================
+   Aurora Glow
+========================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(circle,#22c55e33 0%,transparent 28%),
+
+        radial-gradient(circle,#16a34a22 0%,transparent 35%),
+
+        radial-gradient(circle,#34d39922 0%,transparent 25%);
+
+    filter:blur(100px);
+
+    animation:blobMove 18s ease-in-out infinite alternate;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+/* ==========================================
+   Grid Overlay
+========================================== */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+
+    background-size:45px 45px;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+/* ==========================================
+   Main Container
+========================================== */
+
+.container{
+
+    width:min(1400px,94%);
+
+    margin:auto;
+
+    padding:40px 0 60px;
+
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+
+        0 20px 50px rgba(0,0,0,.35);
+
+    animation:fadeUp .8s ease;
+
+}
+
+header h1{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:#fff;
+
+    text-shadow:0 0 18px rgba(34,197,94,.25);
+
+}
+
+header p{
+
+    margin-top:12px;
+
+    color:#B7F7D3;
+
+    font-size:18px;
+
+}
+
+#datetime{
+
+    margin-top:18px;
+
+    color:#6EE7B7;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+/* ==========================================
+   Main Grid
+========================================== */
+
+.portal-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:28px;
+
+}
+
+/* ==========================================
+   Animations
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes bgMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+@keyframes blobMove{
+
+    from{
+
+        transform:translate(-60px,-40px);
+
+    }
+
+    to{
+
+        transform:translate(60px,40px);
+
+    }
+
+}
+/* ==========================================
+   Search Bar
+========================================== */
+
+#searchInput{
+
+    display:block;
+
+    width:min(700px,100%);
+
+    margin:0 auto 40px;
+
+    padding:18px 28px;
+
+    border:none;
+
+    border-radius:60px;
+
+    outline:none;
+
+    font-size:16px;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
+
+#searchInput::placeholder{
+
+    color:rgba(255,255,255,.65);
+
+}
+
+#searchInput:focus{
+
+    border-color:#22C55E;
+
+    background:rgba(255,255,255,.12);
+
+    box-shadow:
+
+        0 0 20px rgba(34,197,94,.35),
+
+        0 12px 35px rgba(0,0,0,.30);
+
+}
+
+/* ==========================================
+   Dashboard Cards
+========================================== */
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.25);
+
+    transition:
+        transform .35s,
+        box-shadow .35s,
+        border-color .35s;
+
+    animation:fadeUp .8s ease both;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(34,197,94,.45);
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.35),
+
+        0 0 25px rgba(34,197,94,.18);
+
+}
+
+/* ==========================================
+   Glass Shine
+========================================== */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-150%;
+
+    left:-40%;
+
+    width:35%;
+
+    height:300%;
+
+    background:rgba(255,255,255,.08);
+
+    transform:rotate(25deg);
+
+    transition:.8s;
+
+}
+
+.card:hover::before{
+
+    left:130%;
+
+}
+
+/* ==========================================
+   Card Icon
+========================================== */
+
+.card span{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:18px;
+
+    font-size:34px;
+
+    background:rgba(34,197,94,.12);
+
+    box-shadow:
+
+        inset 0 0 12px rgba(34,197,94,.18);
+
+    transition:.35s;
+
+}
+
+.card:hover span{
+
+    transform:scale(1.12) rotate(-5deg);
+
+    background:rgba(34,197,94,.20);
+
+}
+
+/* ==========================================
+   Card Title
+========================================== */
+
+.card h3{
+
+    margin-top:22px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.card:hover h3{
+
+    color:#7EE6A5;
+
+}
+
+.card p{
+
+    margin-top:10px;
+
+    color:#C8F7DB;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   Submenu
+========================================== */
+
+.submenu{
+
+    display:none;
+
+    margin-top:22px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.submenu a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:14px 18px;
+
+    margin-bottom:12px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:#E7FFF1;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.3s;
+
+}
+
+.submenu a::after{
+
+    content:"→";
+
+    opacity:.5;
+
+    transition:.3s;
+
+}
+
+.submenu a:hover{
+
+    padding-left:24px;
+
+    background:rgba(34,197,94,.15);
+
+    color:#fff;
+
+}
+
+.submenu a:hover::after{
+
+    transform:translateX(6px);
+
+    opacity:1;
+
+}
+/* ==========================================
+   Home Button
+========================================== */
+
+.home-btn{
+
+    position:fixed;
+
+    top:25px;
+
+    left:25px;
+
+    z-index:1000;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-weight:600;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.35s;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.home-btn:hover{
+
+    background:rgba(34,197,94,.18);
+
+    border-color:#22C55E;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(34,197,94,.30);
+
+}
+
+/* ==========================================
+   Floating Card Animation
+========================================== */
+
+.card{
+
+    animation:
+        fadeUp .8s ease,
+        floating 6s ease-in-out infinite;
+
+}
+
+.card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.card:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+.card:nth-child(4){
+
+    animation-delay:.6s;
+
+}
+
+.card:nth-child(5){
+
+    animation-delay:.8s;
+
+}
+
+.card:nth-child(6){
+
+    animation-delay:1s;
+
+}
+
+.card:nth-child(7){
+
+    animation-delay:1.2s;
+
+}
+
+.card:nth-child(8){
+
+    animation-delay:1.4s;
+
+}
+
+@keyframes floating{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#06251B;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#22C55E;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#16A34A;
+
+}
+
+/* ==========================================
+   Selection
+========================================== */
+
+::selection{
+
+    background:#22C55E;
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:992px){
+
+    header{
+
+        padding:28px;
+
+    }
+
+    header h1{
+
+        font-size:32px;
+
+    }
+
+    .portal-grid{
+
+        grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+    header{
+
+        padding:25px;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
+    header p{
+
+        font-size:15px;
+
+    }
+
+    #searchInput{
+
+        font-size:15px;
+
+        padding:16px 22px;
+
+    }
+
+    .card{
+
+        padding:24px;
+
+    }
+
+    .card span{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:28px;
+
+    }
+
+    .card h3{
+
+        font-size:20px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    header h1{
+
+        font-size:24px;
+
+    }
+
+    .portal-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .home-btn{
+
+        left:15px;
+
+        top:15px;
+
+        padding:10px 18px;
+
+    }
+
+}
+
+/* ==========================================
+   Footer (Optional)
+========================================== */
+
+footer{
+
+    text-align:center;
+
+    margin-top:50px;
+
+    color:#A7F3D0;
+
+    opacity:.8;
+
+}
+
+/* ==========================================
+   End Dashboard v3.0
+========================================== */
