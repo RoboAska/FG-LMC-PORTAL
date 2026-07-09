@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FG LMC Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container main-content">
+
+    <header>
+        <h1>FG LMC Operations Command Center</h1>
+        <p><i>Integrated Operations, Logistics, Warehouse & Resource Management</i></p>
+        <div id="datetime"></div>
+    </header>     
+<input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 search..."
+    onkeyup="searchCards()">
+	
+    <div class="portal-grid">
+
+        <!-- OPERATIONS -->
+        <div class="card" onclick="toggleMenu('inventoryMenu')">
+            <span>📦</span>
+            <h3>LMC Operations Intelligence</h3>
+			<p>Data & Resource Monitoring</p>
+
+            <div id="inventoryMenu" class="submenu">
+                <a href="https://docs.google.com/spreadsheets/d/1wDP9HmjA_eS2gK0dJXcINpfEZIvPe2jvh9Tz_43dEc4/edit?usp=sharing" target="_blank">FG National Tracker</a>
+                <a href="https://docs.google.com/spreadsheets/d/1ke_J6OJQhsbl3oTyDkpj5qjvFS2td31_/edit?usp=sharing&ouid=111559221031752273853&rtpof=true&sd=true" target="_blank">Inventory Overall Project Monitoring</a>
+                <a href="https://docs.google.com/spreadsheets/d/1XvKHbGQEw9GaaD2PipoLYZanyvIDe526UDgSUaLBonI/edit?usp=sharing" target="_blank">Material Codes</a>
+				<a href="https://docs.google.com/spreadsheets/d/1x6AIi-KgGOI_7tc0L9w6LLYYru_me4am/edit#gid=176385391" target="_blank">Minimum Order Qty</a>
+            </div>
+        </div>
+
+        <!-- TRACKERS -->
+        <div class="card" onclick="toggleMenu('formsMenu')">
+            <span>📝</span>
+            <h3>Monitoring & Analytics</h3>
+            <p>Tracking & Reporting</p>
+
+            <div id="formsMenu" class="submenu">
+                <a href="https://docs.google.com/spreadsheets/d/1xh0BoesCupFFsqxNNp4OaZULKNP2Wt1RzHH26Gnymkw/edit?gid=828038016#gid=828038016" target="_blank">Material Tranfer form (MTF) Tracker</a>
+                <a href="https://docs.google.com/spreadsheets/d/1T6r20fmnTz_YTxPNe61ImeLhOCW-_eJgRrNFCVvifqk/edit?usp=sharing" target="_blank">SRF Tracker</a>
+                <a href="https://docs.google.com/spreadsheets/d/1-EfQNDhMACAEVH8GryCWCSdqHOpqjWe0uSL43wEoWbk/edit?usp=sharing" target="_blank">MRR/Work Order Status / UPDATES</a>
+				<a href="https://docs.google.com/spreadsheets/d/10tJiJwd55xCB0n6RU3T9mCRfm8dZ_j9igjKr5tAHzE8/edit?usp=sharingE" target="_blank">Work Order Creation</a>
+				<a href="PASTE LINK HERE" target="_blank">SLZ Pole Tracker</a>
+				<a href="PASTE LINK HERE" target="_blank">VIZ Pole Tracker</a>
+			
+            </div>
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="card" onclick="toggleMenu('dashboardMenu')">
+            <span>📊</span>
+            <h3>Systems & Support</h3>
+            <p>Applications & Services</p>
+
+            <div id="dashboardMenu" class="submenu">
+                <a href="https://saas.fiberhome.work/applogin/zh/login" target="_blank">Work Order Management System</a>
+                <a href="https://owtb.fiberhome.com/" target="_blank">OFS</a>
+                <a href="https://owtb.fiberhome.com/" target="_blank">WMS</a>
+                <a href="https://mail.fiberhome.com/coremail/" target="_blank">IT Ticket</a>
+				<a href="https://datastudio.google.com/u/1/reporting/1f980648-04be-4c55-995a-be0732b08a71/page/CY34B?s=v5_-cH-Dj5w" target="_blank">FHQA Directory</a>
+				
+            </div>
+        </div>
+        <!-- LOGISTIC -->
+        <div class="card" onclick="toggleMenu('directoryMenu')">
+            <span>🚚</span>
+
+            <h3>Logistics Operations</h3>
+            <p>Delivery & Distribution</p>
+
+            <div id="directoryMenu" class="submenu">
+                <a href="https://docs.google.com/spreadsheets/d/1Xs5-H4NckhZWQciChi3RQCq9symE0Q2QkBiUmP0Mek8/edit?gid=0#gid=0" target="_blank">Domestic Monitoring</a>
+                <a href="https://docs.google.com/spreadsheets/d/1N09EVFdwrdjDzniEcXh0sbvq7LJyICh7dmheCV8e8n4/edit?pli=1&gid=0#gid=0" target="_blank">2025 Poles Status Monitoring</a>
+                <a href="inventory.html" target="_blank">UNAVAILABLE</a>
+            </div>
+        </div>
+
+	<!-- CABLES -->
+        <div class="card" onclick="toggleMenu('cables')">
+            <span>🔗</span>
+            <h3>Warehouse Management</h3>
+            <p>Inventory & Storage Control</p>
+
+            <div id="cables" class="submenu">
+                <a href="https://docs.google.com/spreadsheets/d/1yLKrG5GxM-Q82crN1M5Vvaim_eDarrGlFRJ3XhMK2Oo/edit?gid=0#gid=0" target="_blank">FIBERGEN SUMMARY CABLE MONITORING</a>
+                <a href="https://docs.google.com/spreadsheets/d/1yAd7wWPKpfJ27KOL7Zstxvav-POlCQhd_wLk7iOKJ6g/edit?gid=0#gid=0" target="_blank">FIBERGEN SUMMARY OF OLT MONITORING</a>
+                <a href="https://drive.google.com/drive/folders/17MKKh3swRE6_6-agUjKs3OJ9N7WUEh-e" target="_blank">All Project Cable Monitoring</a>
+				<a href="https://docs.google.com/presentation/d/1aKrCWmU5BlSNzwgA0F4BmTi1xpKq2yjZ/edit#slide=id.p1" target="_blank">WMS P1 IPG & OPS</a>
+				<a href="https://drive.google.com/file/d/1hN0ee-JLWqnZNFi7dcXKckqObMMklofi/view?usp=drive_link" target="_blank">Loose Cable Return</a>
+				<a href="https://drive.google.com/file/d/14yVYC41uP3rmM1b6H4GcOcgd5UICzsWs/view?usp=drive_link" target="_blank">Reject Classification</a>
+				<a href="https://docs.google.com/presentation/d/1iOOOZZAAjYGJ9pRPIwBsmBxGxARuqq5M/edit?usp=sharing&ouid=111559221031752273853&rtpof=true&sd=true" target="_blank">LMC Workflow</a>
+
+            </div>
+        </div>
+	<!-- examples -->
+        <div class="card" onclick="toggleMenu('olt')">
+            <span>⚡</span>
+            <h3>PROJECTS</h3>
+            <p>Project Coordination</p>
+
+            <div id="olt" class="submenu">
+                <a href="PASTE LINK HERE" target="_blank">UNAVAILABLE</a>
+                <a href="PASTE LINK HERE" target="_blank">UNAVAILABLE</a>
+            </div>
+        </div>
+	<!-- COMPANY -->
+        <div class="card" onclick="toggleMenu('company')">
+            <span>📚</span>
+            <h3>WORKFLOW</h3>
+            <p>SOPs & Reference Materials</p>
+
+            <div id="company" class="submenu">
+                <a href="https://docs.google.com/presentation/d/1iOOOZZAAjYGJ9pRPIwBsmBxGxARuqq5M/edit?usp=sharing&ouid=111559221031752273853&rtpof=true&sd=true" target="_blank">WMS WORKFLOW</a>
+                <a href="https://docs.google.com/presentation/d/14iXe5VZ9MS7RRi6_XmdnG2s6I_aKxm06/edit?usp=drive_link&ouid=111559221031752273853&rtpof=true&sd=true" target="_blank">LMC WORKFLOW</a>
+				<a href="https://drive.google.com/file/d/1hN0ee-JLWqnZNFi7dcXKckqObMMklofi/view?usp=drive_link" target="_blank">LOOSE CABLE</a>
+				<a href="https://drive.google.com/file/d/14yVYC41uP3rmM1b6H4GcOcgd5UICzsWs/view?usp=drive_link" target="_blank">REJECT CLASSIFICATION</a>
+            </div>
+        </div>
+
+
+	<div class="card" onclick="toggleMenu('shipment')">
+            <span>📤</span>
+
+            <h3>LOGISTICS</h3>
+            <p>Click to View Links</p>
+
+            <div id="shipment" class="submenu">
+                <a href="https://docs.google.com/spreadsheets/d/1_zA-CS3PIEekXPAKWUdf5HeW4ydTwA0wYtTfR6kXKSg/edit?usp=sharing" target="_blank">Local Ship Monitoring</a>
+                <a href="https://docs.google.com/spreadsheets/d/1vjnUw8LBZ3Ea5gKZSdAimdiMSBrxuVF7/edit?usp=sharing&ouid=111559221031752273853&rtpof=true&sd=true" target="_blank">Warehouse Address List</a>
+				<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrVsM7rW_CYLwXtWk1uoF9l4c3uvNYHqfbx0xMZdztJzjtAj9t7o-CrIx5b-H8ONJ3um6uswRHter9/pubhtml?gid=417987352&single=true" target="_blank">Warehouse Space</a>
+				<a href="https://docs.google.com/spreadsheets/d/1Ob0VzjgO2wK0DkkGa0Wz4-hcrBIy2QJ4R9-XxgMCQOQ/edit?usp=sharing" target="_blank">Shipment Load Plan</a>
+				<a href="PASTE LINK HERE" target="_blank">UNAVAILABLE</a>
+				<a href="PASTE LINK HERE" target="_blank">UNAVAIALBLE</a>
+			
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
