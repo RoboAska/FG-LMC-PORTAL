@@ -181,8 +181,9 @@ header p{
 
     gap:28px;
 
-}
+    align-items:start;
 
+}
 /* ==========================================
    Animations
 ========================================== */
@@ -474,6 +475,12 @@ header p{
 
     border-top:1px solid rgba(255,255,255,.08);
 
+    display:none;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:10px;
+
 }
 
 .submenu a{
@@ -486,8 +493,6 @@ header p{
 
     padding:14px 18px;
 
-    margin-bottom:12px;
-
     border-radius:14px;
 
     text-decoration:none;
@@ -497,6 +502,8 @@ header p{
     background:rgba(255,255,255,.05);
 
     transition:.3s;
+
+    margin:0;
 
 }
 
