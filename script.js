@@ -2,34 +2,34 @@
 // CARD MENU TOGGLE
 // ==========================
 
-function toggleMenu(menuId){
+function toggleMenu(menuId) {
 
     const menu = document.getElementById(menuId);
 
-    if(!menu) return;
+    if (!menu) return;
 
-    const card = menu.closest('.card');
+    const card = menu.closest(".card");
 
-    // Hide all other menus
-    document.querySelectorAll('.submenu').forEach(sub => {
-        if(sub !== menu){
-            sub.style.display = "none";
+    // If this menu is already open, close it
+    if (menu.style.display === "grid") {
+        menu.style.display = "none";
+        card.classList.remove("active");
+        return;
+    }
 
-            const parentCard = sub.closest('.card');
-            if(parentCard){
-                parentCard.classList.remove('active');
-            }
+    // Close all other menus
+    document.querySelectorAll(".submenu").forEach(sub => {
+        sub.style.display = "none";
+
+        const parentCard = sub.closest(".card");
+        if (parentCard) {
+            parentCard.classList.remove("active");
         }
     });
 
-    // Toggle current menu
-    if(menu.style.display === "block"){
-        menu.style.display = "none";
-        card.classList.remove('active');
-    }else{
-        menu.style.display = "grid";
-        card.classList.add('active');
-    }
+    // Open selected menu
+    menu.style.display = "grid";
+    card.classList.add("active");
 }
 
 // ==========================
