@@ -27,7 +27,7 @@ function toggleMenu(menuId){
         menu.style.display = "none";
         card.classList.remove('active');
     }else{
-        menu.style.display = "block";
+        menu.style.display = "grid";
         card.classList.add('active');
     }
 }
