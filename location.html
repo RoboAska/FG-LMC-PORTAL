@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FG LMC Location Directory</title>
+
+    <!-- Leaflet Map -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Website CSS -->
+    <link
+        rel="stylesheet"
+        href="location.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="header">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                📍
+            </div>
+
+            <div>
+
+                <h1>
+                    FG LMC LOCATION DIRECTORY
+                </h1>
+
+                <p>
+                    Warehouse • Stockyard • Location Information
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         MAIN TABLE
+    ====================================== -->
+
+    <main class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>NO.</th>
+
+                    <th>WH NAME</th>
+
+                    <th>WH CODE</th>
+
+                    <th>DISTRICT</th>
+
+                    <th>WH TYPE</th>
+
+                    <th>AREA</th>
+
+                    <th>EXACT LOCATION</th>
+
+                    <th>COORDINATES</th>
+
+                    <th>CONTACT PERSON</th>
+
+                    <th>CONTACT NUMBER</th>
+
+                    <th>EMAIL</th>
+
+                    <th>VIEW</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="locationTable">
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+
+
+    <!-- =====================================
+         LOCATION MODAL
+    ====================================== -->
+
+    <div
+        id="locationModal"
+        class="modal"
+    >
+
+        <div class="modal-box">
+
+
+            <!-- MODAL HEADER -->
+
+            <div class="modal-header">
+
+                <div class="modal-title">
+
+                    <div class="modal-pin">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <h2 id="modalName">
+                            -
+                        </h2>
+
+                        <span id="modalCode">
+                            -
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="close-btn"
+                    onclick="closeLocation()"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <!-- MODAL CONTENT -->
+
+            <div class="modal-content">
+
+
+                <!-- =================================
+                     INFORMATION
+                ================================== -->
+
+                <section class="information">
+
+                    <h3>
+                        LOCATION INFORMATION
+                    </h3>
+
+
+                    <div class="info-grid">
+
+
+                        <div class="info-box">
+
+                            <label>
+                                WH CODE
+                            </label>
+
+                            <strong id="infoCode">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="info-box">
+
+                            <label>
+                                DISTRICT
+                            </label>
+
+                            <strong id="infoDistrict">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="info-box">
+
+                            <label>
+                                WH TYPE
+                            </label>
+
+                            <strong id="infoType">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="info-box">
+
+                            <label>
+                                AREA
+                            </label>
+
+                            <strong id="infoArea">
+                                -
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EXACT LOCATION -->
+
+                    <div class="section">
+
+                        <h3>
+                            EXACT LOCATION
+                        </h3>
+
+                        <div class="address">
+
+                            <span>
+                                📍
+                            </span>
+
+                            <p id="infoAddress">
+                                -
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- COORDINATES -->
+
+                    <div class="section">
+
+                        <h3>
+                            COORDINATES
+                        </h3>
+
+                        <div class="coordinate-grid">
+
+
+                            <div class="coordinate-box">
+
+                                <label>
+                                    LATITUDE
+                                </label>
+
+                                <strong id="infoLatitude">
+                                    -
+                                </strong>
+
+                            </div>
+
+
+                            <div class="coordinate-box">
+
+                                <label>
+                                    LONGITUDE
+                                </label>
+
+                                <strong id="infoLongitude">
+                                    -
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONTACT -->
+
+                    <div class="section">
+
+                        <h3>
+                            CONTACT INFORMATION
+                        </h3>
+
+
+                        <div class="contact">
+
+                            <span>
+                                👤
+                            </span>
+
+                            <div>
+
+                                <label>
+                                    CONTACT PERSON
+                                </label>
+
+                                <strong id="infoContact">
+                                    -
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact">
+
+                            <span>
+                                📞
+                            </span>
+
+                            <div>
+
+                                <label>
+                                    CONTACT NUMBER
+                                </label>
+
+                                <strong id="infoNumber">
+                                    -
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact">
+
+                            <span>
+                                ✉️
+                            </span>
+
+                            <div>
+
+                                <label>
+                                    EMAIL
+                                </label>
+
+                                <strong id="infoEmail">
+                                    -
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     MAP
+                ================================== -->
+
+                <section class="map-section">
+
+                    <div class="map-header">
+
+                        <div>
+
+                            <strong>
+                                LOCATION MAP
+                            </strong>
+
+                            <span>
+                                Exact warehouse location
+                            </span>
+
+                        </div>
+
+                        <span class="map-live">
+                            ● MAP
+                        </span>
+
+                    </div>
+
+
+                    <div id="map"></div>
+
+
+                    <div class="map-footer">
+
+                        <span id="mapCoordinates">
+                            -
+                        </span>
+
+
+                        <button
+                            onclick="openGoogleMaps()"
+                        >
+                            Open Google Maps ↗
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Leaflet JavaScript -->
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+
+
+    <!-- Website JavaScript -->
+
+    <script src="location.js"></script>
+
+
+</body>
+
+</html>
