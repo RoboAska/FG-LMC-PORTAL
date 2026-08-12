@@ -1,0 +1,203 @@
+```css
+/* ===========================
+   WAREHOUSE INVENTORY SYSTEM
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    height:70px;
+}
+
+.navbar h3{
+    font-weight:600;
+}
+
+/* Dashboard Cards */
+
+.card-summary{
+    border:none;
+    border-radius:15px;
+    transition:.25s;
+}
+
+.card-summary:hover{
+    transform:translateY(-4px);
+}
+
+.card-summary h6{
+    color:#777;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.card-summary h2{
+    color:#0d6efd;
+    font-weight:700;
+}
+
+/* Toolbar */
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+.btn{
+    border-radius:10px;
+    font-weight:500;
+}
+
+.form-control,
+.form-select{
+    border-radius:10px;
+}
+
+/* Table */
+
+.table{
+    margin-bottom:0;
+    white-space:nowrap;
+}
+
+.table thead th{
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    user-select:none;
+}
+
+.table tbody td{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table-hover tbody tr:hover{
+    background:#eef6ff;
+}
+
+/* Badges */
+
+.badge{
+    font-size:12px;
+    padding:7px 10px;
+}
+
+/* Table Responsive */
+
+.table-responsive{
+    max-height:650px;
+    overflow:auto;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ddd;
+}
+
+/* Footer */
+
+.footer{
+    text-align:right;
+    margin-top:15px;
+    color:#666;
+}
+
+/* Quantity Colors */
+
+.qty-positive{
+    color:#198754;
+    font-weight:600;
+}
+
+.qty-warning{
+    color:#fd7e14;
+    font-weight:600;
+}
+
+.qty-danger{
+    color:#dc3545;
+    font-weight:600;
+}
+
+/* Status Colors */
+
+.status-available{
+    background:#198754;
+    color:white;
+}
+
+.status-allocated{
+    background:#ffc107;
+    color:#222;
+}
+
+.status-locked{
+    background:#dc3545;
+    color:white;
+}
+
+.status-intransit{
+    background:#0dcaf0;
+    color:#222;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.card-summary{
+
+margin-bottom:15px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar h3{
+
+font-size:20px;
+
+}
+
+.table{
+
+font-size:13px;
+
+}
+
+.btn{
+
+font-size:13px;
+
+}
+
+}
+```
