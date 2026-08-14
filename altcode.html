@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALT CODE MATERIAL DIRECTORY</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7f9;color:#1f2937}
+.header{background:linear-gradient(135deg,#0b6b50,#159a73);color:#fff;padding:22px 28px;box-shadow:0 3px 12px rgba(0,0,0,.15)}
+.header h1{margin:0 0 5px;font-size:27px}.header p{margin:0;opacity:.9;font-size:14px}
+.container{max-width:1500px;margin:25px auto;padding:0 18px}
+.search-box{background:#fff;padding:18px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);margin-bottom:18px}
+.search-label{display:block;font-weight:700;margin-bottom:8px}
+#searchInput{width:100%;padding:13px 15px;border:1px solid #cbd5e1;border-radius:8px;font-size:15px;outline:none}
+#searchInput:focus{border-color:#159a73;box-shadow:0 0 0 3px rgba(21,154,115,.12)}
+.result-info{margin-top:10px;font-size:13px;color:#64748b}
+.table-card{background:#fff;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08);overflow:auto}
+table{width:100%;border-collapse:collapse;min-width:1100px}
+th{background:#fff500;color:#111827;padding:12px 10px;text-align:left;font-size:13px;border:1px solid #d1d5db;position:sticky;top:0;z-index:2}
+td{padding:10px;border:1px solid #d1d5db;font-size:13px;vertical-align:top}
+tbody tr:hover{background:#f0fdf4}.category{font-weight:600}
+.no-result{display:none;text-align:center;padding:35px;color:#64748b;font-size:15px}
+@media(max-width:700px){.header h1{font-size:22px}.container{margin-top:15px;padding:0 10px}th,td{font-size:12px}}
+</style>
+</head>
+<body>
+<header class="header">
+<h1>ALT CODE MATERIAL DIRECTORY</h1>
+<p>Search by Material Code or Material Description</p>
+</header>
+<main class="container">
+<section class="search-box">
+<label class="search-label" for="searchInput">🔎 Search Material Code / Material Description</label>
+<input type="text" id="searchInput" placeholder="Search material code or material description..." autocomplete="off">
+<div class="result-info" id="resultInfo">Showing all materials</div>
+</section>
+<section class="table-card">
+<table>
+<thead><tr>
+<th>CATEGORY</th><th>MATERIAL CODE</th><th>MATERIAL DESCRIPTION</th><th>UOM</th>
+<th>ALT-CODE 1</th><th>ALT-CODE 2</th><th>ALT-CODE 3</th><th>ALT-CODE 4</th>
+</tr></thead>
+<tbody id="materialTable">
+                <tr><td>FOC</td><td>GYFZY-216-V</td><td>Tie cable - 216F</td><td>KM</td><td>FNA-PE85081</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFTS-216-V</td><td>Fiber Optical Cable (FOC), 216F, Armoured</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFTY-216-V</td><td>FOC, 216 Fiber Loose Tube Cable, Traditional</td><td>KM</td><td>FNA-PE22005</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFTC8Y-216-V</td><td>FOC, 216 Core, Figure 8, 4km/reel</td><td>KM</td><td>FNA-PE22117</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFTY-144-V</td><td>FOC, 144 Fiber Loose Tube Cable, Traditional</td><td>KM</td><td>FNA-PE22014</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFTY-72-V</td><td>FOC, 72-Core Loose Tube Duct Cable, Traditional</td><td>KM</td><td>FNA-PE22003</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFTC8Y-72-V</td><td>FOC, 72 Core, Figure 8</td><td>KM</td><td>FNA-PE22008</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFTY-24-V</td><td>FOC, 24 Core Loose Tube Duct Cable, Traditional</td><td>KM</td><td>FNA-PE22015</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFY-24-V</td><td>FOC, 24 Core Loose Tube Duct Cable, Traditional-Semi Dry</td><td>KM</td><td>FNA-PE22116</td><td>GYFTY-24-V</td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>GYFC8Y-24-V</td><td>FOC, Figure 8 Semi-dry Cable (24F)</td><td>KM</td><td>FNA-PE22001</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>VH4871H0900A26-V</td><td>Pull-back Cable - 48F</td><td>KM</td><td>FNA-PE85082</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>VH2471H0900A26-V</td><td>Pull-back Cable - 24F</td><td>KM</td><td>FNA-PE85083</td><td>VH4871H0900A26-V</td><td>D1H2471881060001-V</td><td></td></tr>
+                <tr><td>FOC</td><td>YH047121F5B8-VS</td><td>Cable, Fiber Optic, 4F, Fig.8, Drop Cable (YH047121F5B8-VS)</td><td>KM</td><td>YH047121F5B8-V</td><td></td><td></td><td></td></tr>
+                <tr><td>FOC</td><td>YH017121F5B8-V</td><td>1-Fiber Fig 8 Drop Cable</td><td>KM</td><td>FNA-PE85109</td><td>X2H01692F0680001-V</td><td></td><td></td></tr>
+                <tr><td>LCP</td><td>FNA-PE85084</td><td>LCP with 1 x 4 Splitter</td><td>PC</td><td>FNA400527</td><td>FNA400499-A-1201</td><td>FN-140500003-E003T1201</td><td></td></tr>
+                <tr><td>LCP</td><td>FNA400526-1201</td><td>LCP with 1 x 8 Splitter (Black)</td><td>PC</td><td>FNA-PE85131</td><td>FNA400526</td><td>FN-140500003-E002T1201</td><td></td></tr>
+                <tr><td>LCP</td><td>FNA400545</td><td>LCP with 1 1 x 8 Cassette Splitter</td><td>PC</td><td>FNA-PE85079</td><td>FNA400043-LCP</td><td>FN-140500009-E001T1201</td><td></td></tr>
+                <tr><td>LCP</td><td>FNA400546-1201</td><td>LCP with 2 1 x 8 Cassette Splitter (with PLDT Markings)</td><td>PC</td><td>FNA-PE85080</td><td></td><td></td><td></td></tr>
+                <tr><td>LCP</td><td>FNA400548</td><td>LCP with 4 1 x 8 Cassette Splitter</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>NAP</td><td>FNA400525-1201</td><td>NAP with 1 x 8 splitter (Black)</td><td>PC</td><td>FNA-PE85132</td><td>FNA400525</td><td>FN-140500003-E001T1201</td><td></td></tr>
+                <tr><td>NAP</td><td>FNA400543-1201</td><td>NAP with 1 1 x 8 Cassette Splitter</td><td>PC</td><td>FNA-PE85077</td><td></td><td></td><td></td></tr>
+                <tr><td>NAP</td><td>FNA400544-1201</td><td>NAP with 2 1 x 8 Cassette Splitter</td><td>PC</td><td>FNA-PE85078</td><td></td><td></td><td></td></tr>
+                <tr><td>NAP</td><td>FNA400547-1201</td><td>NAP with 4 1 x 8 Cassette Splitter</td><td>PC</td><td>FNA-PE85107</td><td></td><td></td><td></td></tr>
+                <tr><td>NAP</td><td>FNA100088</td><td>Mini NAP Box with 1 x 8 Micro Splitter</td><td>PC</td><td>FNA-PE85100</td><td></td><td></td><td></td></tr>
+                <tr><td>LCP</td><td>FNA400504-B-1201</td><td>Pedestal, DP with LCP 1 x 8 Splitter</td><td>PC</td><td>FNA-PE25003</td><td></td><td></td><td></td></tr>
+                <tr><td>NAP</td><td>FNA400504-A-1201</td><td>Pedestal, DP with NAP 1 x 8 Splitter</td><td>PC</td><td>FNA-PE25004</td><td></td><td></td><td></td></tr>
+                <tr><td>LCP&amp;NAP Box</td><td>FNA400499-1201</td><td>NAP Box Only</td><td>PC</td><td>FNA-PE85133</td><td></td><td></td><td></td></tr>
+                <tr><td>LCP&amp;NAP Box</td><td>FNA400549-A-1201</td><td>Meet me Point Box (Pole Mounted)</td><td>PC</td><td>FNA-PE85156</td><td></td><td></td><td></td></tr>
+                <tr><td>LCP&amp;NAP Box</td><td>FNA-PE85155</td><td>Meet me Point Box (Pedestal)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Closure</td><td>FNA300328-216-1201</td><td>Closure, 216F</td><td>PC</td><td>FNA300200-1201</td><td>FN-120200004-216T1201</td><td></td><td></td></tr>
+                <tr><td>Closure</td><td>FNA300005-144-1201</td><td>Joint Closure, 144F Core</td><td>PC</td><td>FNA300199-1201</td><td>FN-120800010-144T1201</td><td></td><td></td></tr>
+                <tr><td>Closure</td><td>FNA300330-72-1201</td><td>Joint Closure (72F) mechanical duct</td><td>PC</td><td>FNA300005-72-1201</td><td>FN-120800010-72T1201</td><td></td><td></td></tr>
+                <tr><td>Closure</td><td>FNA300330-24-1201</td><td>24 Closure (Mechanical)</td><td>PC</td><td>FNA300005-24-1201</td><td>FN-120800010-24T1201</td><td>FN-120800011-24T1201</td><td></td></tr>
+                <tr><td>ODF</td><td>FNA200490-A-1201</td><td>ODU19RPS-CLD216-B-41-AS-1201</td><td>PC</td><td>FNA200490-1201</td><td>FN-110100012-E001T1201</td><td></td><td></td></tr>
+                <tr><td>ODF</td><td>FNA200515-A-1201</td><td>ODU 19RPS-CLD72-C-41-AS-1201</td><td>PC</td><td>FNA-PE85127</td><td></td><td></td><td></td></tr>
+                <tr><td>ODF</td><td>FNA200489-A-1201</td><td>ODU19RPS-CLD24-B-41-AS-1201</td><td>PC</td><td>FNA-PE85116</td><td></td><td></td><td></td></tr>
+                <tr><td>ODF</td><td>FNA400452-1201</td><td>48F ODF Wall mounted without Lock</td><td>PC</td><td>FNA-PE85076</td><td></td><td></td><td></td></tr>
+                <tr><td>ODF</td><td>FNA400461-A-1201</td><td>24F ODF Wall Mounted with Lock</td><td>PC</td><td>FNA400452-1201</td><td>FNA400461-B-1201</td><td></td><td></td></tr>
+                <tr><td>ODF</td><td>FNA740500-1201</td><td>LCP/NAP 19-inch Sub-Rack (FNA740500-GJ)</td><td>PC</td><td>FNA-PE21014</td><td></td><td></td><td></td></tr>
+                <tr><td>SPLITTER</td><td>FNA600185-1201</td><td>NAP Splitter, 1\*1 x 8 (Cassette) (FNA600185-GJ)</td><td>PC</td><td>FNA-PE21011</td><td>FNA600301-1201</td><td></td><td></td></tr>
+                <tr><td>Rack</td><td>FNA-PE24009</td><td>19&quot; ODF Rack (4 post) Collapsible (45RU 600mm x 600mm) 2142.9mm H</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Rack</td><td>FNA-PE85062</td><td>19&quot; W Open Bay, Collapsible Rack (2 post) 1900mm H</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNA-PE12066</td><td>Clamp, Pole, CA Type 5/8&quot; x 14&quot; - 16&quot;, w/ Bolts and Nuts</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12014</td><td>Clamp, Pole, CA Type 5/8&quot; x 12&quot; - 14&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12014</td><td>FNA100669-1211</td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12006</td><td>Clamp, Pole, CA Type 5/8&quot; x 10&quot; - 12&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12006</td><td>FNA100667-1211</td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP/NEW GUYING物料（暂时可不填）</td><td>FNAFG12004</td><td>Clamp, Pole, CA Type 5/8&quot; x 8&quot; - 10&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12004</td><td>FNA100666-1211</td><td>FN-200100003T1201</td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12011</td><td>Clamp, Pole, CA Type 5/8&quot; x 6&quot; - 8&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12011</td><td>FNA100668-1211</td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12003</td><td>Clamp, Pole, CA Type 5/8&quot; x 5” - 7”, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12003</td><td>FNA100665-1211</td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12057</td><td>Clamp, Pole, CA Type 5/8&quot; x 3” - 5”, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12057</td><td></td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNA-PE12067</td><td>Clamp, Pole, DEG Type 5/8&quot; x 14&quot; - 16&quot;, w/ Bolts and Nuts</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12021</td><td>Clamp, Pole, DEG Type 5/8&quot; x 12&quot; - 14&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12021</td><td>FNA-PE64016</td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12020</td><td>Clamp, Pole, DEG Type 5/8&quot; x 10&quot; - 12&quot; w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12020</td><td></td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP/NEW GUYING物料（暂时可不填）</td><td>FNAFG12026</td><td>Clamp, Pole, DEG Type 5/8&quot; x 8&quot; - 10&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12026</td><td>FN-200100002T1206</td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12016</td><td>Clamp, Pole, DEG Type 5/8&quot; x 6” - 8&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12016</td><td></td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNAFG12015</td><td>Clamp, Pole, DEG Type 5/8&quot; x 5” - 7&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12015</td><td>FNA-GL12015</td><td></td><td></td></tr>
+                <tr><td>POLE CLAMP</td><td>FNA-PE12058</td><td>Clamp, Pole, DEG Type 5/8&quot; x 3” - 5&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12003</td><td>FNA100665-1211</td><td>FNAFG12003</td><td></td></tr>
+                <tr><td>POLE</td><td>FNA-PE18001</td><td>Concrete Poles, 7.5m (25ft), Class 7A (Round) - PLDT Standard</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE</td><td>FNA-PE18004</td><td>Concrete Poles, 9.0m (30ft), Class 7A (Round) - PLDT Standard</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE</td><td>FNA-PE18006</td><td>Concrete Poles, 7.5m (25ft), Class 9 (Round) - PLDT Standard</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE</td><td>FNA-PE18007</td><td>Concrete Poles, 9.0m (30ft), Class 9 (Round) - PLDT Standard</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE</td><td>FNAPE18020</td><td>POLE,CONCRETE,ROUND,30FT,CLASS 7A,SEGMENT</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE</td><td>FNA-PE18014</td><td>Concrete Poles,10.67m(35ft), Class7A(Round)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>POLE</td><td>FNA-PE18005</td><td>Concrete Poles,12.19m(40ft), Class7A(Round)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>GUYING&amp;ARM/NEW GUYING物料（暂时可不填）</td><td>FNA100384-GJ</td><td>26&quot; EXTENSION ARM</td><td>PC</td><td>FNA-PE13002</td><td></td><td></td><td></td></tr>
+                <tr><td>GUYING&amp;ARM/NEW GUYING物料（暂时可不填）</td><td>FNA100383-GJ</td><td>CF-Cable Extension Arm 44＂</td><td>PC</td><td>FNA-PE13003</td><td></td><td></td><td></td></tr>
+                <tr><td>GUYING&amp;ARM/NEW GUYING物料（暂时可不填）</td><td>FNAPE13018</td><td>CF-Ten Pin Alley Arm (3x4x10)-10Holes</td><td>PC</td><td>FNA-PE13004</td><td></td><td></td><td></td></tr>
+                <tr><td>Washer&amp;Spacer/NEW GUYING物料（暂时可不填）</td><td>FNA100406-1206</td><td>Washer, Square Flat 2&quot; x 2&quot;</td><td>PC</td><td>FNA-PE11040</td><td></td><td></td><td></td></tr>
+                <tr><td>Washer&amp;Spacer</td><td>FNA-PE11038</td><td>Washer, Square Curved 2&quot; x 2&quot;</td><td>PC</td><td>FNA-GL11038</td><td>FNA100406-1206</td><td></td><td></td></tr>
+                <tr><td>Washer&amp;Spacer</td><td>FNA-PE11039</td><td>Washer, Square Flat 3&quot; x 3&quot;</td><td>PC</td><td>FNA-GL11039</td><td>FNAPE17032</td><td></td><td></td></tr>
+                <tr><td>Washer&amp;Spacer</td><td>FNA-PE11037</td><td>Washer, Square Curved 3&quot; x 3&quot;</td><td>PC</td><td>FNA100403-1206</td><td>FNA-GL11037</td><td></td><td></td></tr>
+                <tr><td>Washer&amp;Spacer</td><td>FNA-PE11041</td><td>Washer, Round 5/8&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Washer&amp;Spacer</td><td>FNA-PE11050</td><td>Washer, Round 3/8&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Washer&amp;Spacer</td><td>FNA-PE42013</td><td>Spacer, Cable 3/4&quot; (Black)</td><td>PC</td><td>FNA-GL42013</td><td></td><td></td><td></td></tr>
+                <tr><td>Loop Holder</td><td>FNAPE19001</td><td>Cable Loop Holder (X Frame China)</td><td>PC</td><td>FNA-PE19003</td><td></td><td></td><td></td></tr>
+                <tr><td>Aerial Accessories</td><td>FNA-PE16001</td><td>Wire, Lashing 1.2mm x 190m/roll</td><td>PC</td><td>FNA-GL16001</td><td>FNA-SO16001</td><td></td><td></td></tr>
+                <tr><td>Aerial Accessories</td><td>FNA-PE16002</td><td>Wire, Messenger 5/16&quot;</td><td>M</td><td>FNA-GL16002</td><td>FNA-CC16002</td><td></td><td></td></tr>
+                <tr><td>Aerial Accessories</td><td>FNA-PE17002</td><td>Clamp, Lashing Wire</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Guy Grip</td><td>FNAFG14011</td><td>Guy Grip, 1/7&quot; (China)</td><td>PC</td><td>FNA-PE14011</td><td></td><td></td><td></td></tr>
+                <tr><td>Guy Grip</td><td>FNAFG14001</td><td>Guy Grip, For Figure 8, 3/16&quot;</td><td>PC</td><td>FNA-PE14001</td><td>FNA100553-1301</td><td></td><td></td></tr>
+                <tr><td>Guy Grip</td><td>FNAFG14005</td><td>Guy Grip, 5/16&quot;, Black</td><td>PC</td><td>FNA-PE14005</td><td></td><td></td><td></td></tr>
+                <tr><td>Guy Grip Spacer</td><td>FNAFG14008</td><td>Spacer, Thimble Guy 3/8&quot;</td><td>PC</td><td>FNA-PE14008</td><td>FNA100385-GJ</td><td>FNA702191</td><td></td></tr>
+                <tr><td>GROUNDING</td><td>FNAFG15001</td><td>Rod, Grounding 1/2&quot; x 6&#x27; (1.27cm x 1.82m)</td><td>PC</td><td>FNA-PE15001</td><td>FNAFG15006</td><td>FNAFM15006</td><td></td></tr>
+                <tr><td>GROUNDING</td><td>FNAFG15006</td><td>Rod, Grounding 5/8&quot; x 5&#x27; (Cancelled)</td><td>PC</td><td>FNA-PE15006</td><td>FNAFM15006</td><td></td><td></td></tr>
+                <tr><td>GROUNDING</td><td>FNAFG15008</td><td>Ground Strand Clamp (Top Set)</td><td>PC</td><td>FNA-PE15008</td><td></td><td></td><td></td></tr>
+                <tr><td>GROUNDING</td><td>FNAFG15009</td><td>Ground Rod Clamp (Bottom Set)</td><td>PC</td><td>FNA-PE15009</td><td>FNAFM15009</td><td></td><td></td></tr>
+                <tr><td>Aerial Accessories</td><td>FNA100295</td><td>Strap, Stainless Steel 5/8&quot;</td><td>M</td><td>FNA-PE41008</td><td>FN-209900002T1201</td><td></td><td></td></tr>
+                <tr><td>Aerial Accessories</td><td>FNA750104</td><td>Buckle, Stainless Steel 5/8&quot;</td><td>PC</td><td>FNA-PE41001</td><td>FNA100296</td><td></td><td></td></tr>
+                <tr><td>J HOOK</td><td>FNAFG19008</td><td>R/CF－J－Hook with Square Nut</td><td>PC</td><td>FNA-PE19009</td><td></td><td></td><td></td></tr>
+                <tr><td>J HOOK</td><td>FNA-PE19012</td><td>J-Hook with Square Nut (Facing Right) (Cancelled)</td><td>PC</td><td>FNAFG19012</td><td>FNA-PE19009</td><td></td><td></td></tr>
+                <tr><td>Aerial Accessories</td><td>FNAFG19065</td><td>Bridle Ring - (NEW)</td><td>PC</td><td>FNA-PE19010</td><td>FNA-PE19014</td><td>FNA702195</td><td></td></tr>
+                <tr><td>Cable Tie</td><td>FNA-PE42001</td><td>Cable Tie, Plastic 250mm (Yellow)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Cable Tie</td><td>FNAFG42002</td><td>Cable Tie, Plastic 300mm x 7.6mm (Black)</td><td>PC</td><td>FNA-PE42002</td><td></td><td></td><td></td></tr>
+                <tr><td>Cable Tie</td><td>FNA-PE42019</td><td>Cable Tie, 250mm x 7.6mm (Black)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Cable Tie</td><td>FNA-PE42017</td><td>Cable Tie, Plastic 150mm L x 3mm W (White) - PLDT Standard</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Cable tray/Ladder</td><td>FNA-PE51050</td><td>G.I. Cable Tray (300mm x 100mm)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Cable tray/Ladder</td><td>FNA-PE34001</td><td>Smart Ladder Rack with Horizontal Installation Accessories 300mm wide</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Aerial Accessories/NEW GUYING物料（暂时可不填）</td><td>FNAFG17001</td><td>Suspension Clamp, Straight</td><td>PC</td><td>FNA-PE17001</td><td>FN-200400027T1201</td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNAFG11001</td><td>Bolt, Machine 5/8&quot; x 4&quot; Full Thread / 10cm w/ Square Nut</td><td>PC</td><td>FNA-PE11001</td><td>FNA100545-1201</td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT/NEW GUYING物料（暂时可不填）</td><td>FNA100297</td><td>V/ CF-Bolt Machine 5／8＂x6＂square</td><td>PC</td><td>FNA-PE11003</td><td>FNA-SO11003</td><td>FNA-GL11003</td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA100298</td><td>Bolt, Machine 5/8&quot; x 8&quot; Full Thread / 20cm w/ Square Nut</td><td>PC</td><td>FNA-PE11004</td><td>FNA-GL11004</td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE11027</td><td>Nut, Square 5/8&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE11073</td><td>Bolt with Nut, 1 1/2&quot;x 3/8&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE11102</td><td>Bolt, Dyna 15mm x 100mm w/ Nut &amp; Washer</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE19020</td><td>Full Thread Bar, 3/8&quot;Ø x 3m.</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE19022</td><td>Nut &amp; Washer for Full Thread Bar, 3/8&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE11029</td><td>Bolt, Oval Eye 5/8&quot; x 8&quot;</td><td>PC</td><td>FNA-PE11074</td><td></td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE11044</td><td>Nut, Oval Eye 5/8&quot; (Cancelled)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>BOLT&amp;NUT</td><td>FNA-PE11074</td><td>Eyebolt (Cancelled)</td><td>PC</td><td>FNA-PE11029</td><td></td><td></td><td></td></tr>
+                <tr><td>Tox &amp; Screw</td><td>FNAPE19061</td><td>Tox &amp; Screw, 12mm x 2&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Tox &amp; Screw</td><td>FNAPE19060</td><td>Tox &amp; Screw, 10mm x 1.5&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Tox &amp; Screw</td><td>FNA-PE19019</td><td>Tox &amp; Screw, 4mm x 1&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE17004</td><td>C-Clamp/U-Clamp, 4&quot; - 2 holes</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE17010</td><td>C-Clamp/U-Clamp 2 holes 2&quot;Ø</td><td>PC</td><td>FNA-SO17010</td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE11018</td><td>Bolt, U-Type 1/4&quot; x 2&quot; w/ Nut &amp; Washer</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE19023</td><td>Clevis Hanger Loop, 2&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE19043</td><td>Grip Anchor, 5/8&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE19021</td><td>Grip Anchor, 3/8&quot;</td><td>PC</td><td>FNA-SO19021</td><td></td><td></td><td></td></tr>
+                <tr><td>Angle&amp;FLAT Bar</td><td>FNA-PE33009</td><td>Angle Bar, 2&quot; x 2&quot; x 1/8mm x 3m</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Angle&amp;FLAT Bar</td><td>FNA-PE33024</td><td>50mm x 75mm x 6mm Thick Angle Bar Galvanize (340mm length)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Angle&amp;FLAT Bar</td><td>FNA-PE33008</td><td>Flat Bar, 1 1/2&quot; x 6mm x 6m</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Box</td><td>FNA-PE44019</td><td>Pull Box, 600mm x 500mm x 200mm Push lock type w/ Backboard and Accessories</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Box</td><td>FNA-PE44003</td><td>Pull Box, 300mm x 300mm x 100mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Box</td><td>FNA-PE44009</td><td>Junction Box (Utility, Box 2&quot; x 4&quot; G.A 18-B Deep)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Box</td><td>FNA-PE44010</td><td>Junction Box, 8&quot; x 8&quot; x 4.5&quot; (200m x 200m x 100m)</td><td>PC</td><td>FNA-CI44010</td><td></td><td></td><td></td></tr>
+                <tr><td>Box</td><td>KSSPH0700000039-FG</td><td>Wall Mounted ODF Cabinet (H:610mm (2ft), W:600mm, D:600mm) with PDU and Cooling Fan</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Box</td><td>KSSPH0700000040-FG</td><td>Wall Mounted ODF Cabinet (H:457mm (1.5ft), W:600mm, D:600mm) with PDU and Cooling Fan</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Box</td><td>FNA-PE26216</td><td>6RU Combox (24.7&quot; x 21.5&quot; x 1&#x27;)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Plyboard</td><td>KSSPH0400000166-FG</td><td>Plyboard (2m x 2m x 3/4&quot;)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31080</td><td>Pipe,HDPE SDR 11 118mm x 50m/roll (Black)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31081</td><td>Pipe,HDPE SDR 11 118mm x 50m/roll (Yellow)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31071</td><td>Pipe, HDPE SDR11, 114.3mm x 6m/pc (Black) (Cancelled)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31070</td><td>Pipe, HDPE SDR11, 114.3mm x 6m/pc (Yellow) (Cancelled)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31036</td><td>Pipe, HDPE SDR11 50mm x 250m/roll (Black)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31061</td><td>Pipe, HDPE SDR11 50mm x 250m/roll (Yellow)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31045</td><td>Pipe, HDPE SDR13.5 50mm x 250m/roll (Black)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31044</td><td>Pipe, HDPE SDR13.5 50mm x 250m/roll (Yellow)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31087</td><td>Pipe, HDPE SDR13.5 32mm x 250m/roll (Black)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31041</td><td>Pipe, HDPE SDR13.5 32mm x 200m/roll (Yellow)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31090</td><td>Pipe,HDPE SDR 13.5 20mm x 250m/roll (Black)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe</td><td>FNA-PE31084</td><td>Pipe, HDPE SDR13.5 20mm x 250m/roll (Yellow)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe Coupling</td><td>FNA-PE32002</td><td>Coupling, Compression HDPE 50mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe Coupling</td><td>FNAPE32068</td><td>Coupling, Compression HDPE, 32mm Ø</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe Duct Plug</td><td>FNA-PE33017</td><td>Duct Plug, Mechanical 3/4&quot;(Cancelled)</td><td>PC</td><td>FNA-PE33002</td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe Duct Plug</td><td>FNA-PE33003</td><td>Duct Plug, Simplex, 50mm</td><td>PC</td><td>FNA-GL33003</td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe Duct Plug</td><td>FNA-PE33002</td><td>Duct Plug, Mechanical Blank, 50mm</td><td>PC</td><td>FNA-PE33017</td><td>FNA-GL33002</td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe Duct Plug</td><td>FNA-PE33005</td><td>Duct Plug, Simplex, 32mm (for occupied Sub Duct)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>HDPE Pipe Duct Plug</td><td>FNA-PE33006</td><td>Duct Plug, Mechanical Blank, 32mm (for vacant Sub-Duct)</td><td>PC</td><td>FNA-GL33006</td><td></td><td></td><td></td></tr>
+                <tr><td>END BELL</td><td>KSSPH0400000167-FG</td><td>End Bell, 32mm Ø (for HDPE)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>END BELL</td><td>FNA-PE32009</td><td>End Bell, PVC 50mm x 6&quot; (Orange)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>END BELL</td><td>FNA-PE32011</td><td>End Bell, PVC 114.3mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>END CAP</td><td>FNA-PE32010</td><td>End Cap, PVC 114.3mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>END BELL</td><td>FNA-PE32064</td><td>End Bell, PVC 118mm (Yellow)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Pipe</td><td>FNA-PE31009</td><td>Pipe, PVC 114.3mm x 6m/pc (Yellow)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Pipe</td><td>FNA-PE31028</td><td>Pipe, PVC 50mmØ x 3m/pc (Orange)</td><td>PC</td><td>FNA-CI31028</td><td>FNA-GL31028</td><td></td><td></td></tr>
+                <tr><td>PVC Pipe</td><td>FNA-PE31047</td><td>Pipe, PVC 25mmØ x 3m/pc (Orange)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Pipe</td><td>FNA-PE31008</td><td>Pipe, PVC for Spiralling (black)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Coupling</td><td>FNA-PE32051</td><td>Coupling, PVC pipe 114.3mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Coupling</td><td>FNA-PE32018</td><td>Coupling, PVC pipe 50mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Coupling （S）</td><td>FNA-PE32063</td><td>PVC Pipe Adapter, 2&quot;</td><td>PC</td><td>FNA-PE32042</td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Elbow</td><td>FNA-PE31010</td><td>Pipe, PVC 114.3mm x 90deg Elbow x 1m Radius (Yellow)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Elbow</td><td>FNA-PE32062</td><td>Elbow, Pipe PVC 63mm x 90deg x 0.5 meter radius (Orange)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Elbow</td><td>FNA-PE32019</td><td>Elbow, Pipe PVC 50mm x 90deg x 1 meter radius (Orange)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PVC Elbow</td><td>FNA-PE32058</td><td>Elbow, Pipe PVC 25mm x 90deg x 1m radius</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>IMC Pipe</td><td>FNA-PE31082</td><td>Pipe, IMC 114.3mmØ x 3m/pc</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>IMC Pipe</td><td>FNA-PE31003</td><td>Pipe, IMC 50mm x 3m/pc</td><td>PC</td><td>FNA-SO31003</td><td></td><td></td><td></td></tr>
+                <tr><td>IMC Pipe Coupling</td><td>FNA-PE32054</td><td>Coupling, IMC pipe 114.3mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>IMC Pipe Coupling</td><td>FNA-PE32006</td><td>Coupling, IMC pipe 50mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>IMC Pipe Coupling</td><td>FNA-PE11030</td><td>IMC Locknut &amp; Bushing 2&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>IMC Elbow</td><td>FNA-PE32021</td><td>Elbow, Pipe IMC 50mm x 90deg x 1m radius</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>EMT Pipe</td><td>FNA-PE31033</td><td>Pipe, EMT 50mm x 3m/pc</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>EMT Coupling</td><td>FNA-PE32016</td><td>Coupling, EMT pipe 50mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>EMT Elbow</td><td>FNA-PE32004</td><td>Pipe, Elbow, EMT 50mm x 90deg bend</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>FMC Pipe</td><td>FNA-PE31019</td><td>Flexible Metal Conduit, 2&quot;Ø</td><td>M</td><td>FNA-PE31055</td><td></td><td></td><td></td></tr>
+                <tr><td>FMC Pipe Coupling</td><td>FNA-PE32013</td><td>Straight Connector w/nut - 50mm Conduit</td><td>PC</td><td>FNA-PE32001</td><td></td><td></td><td></td></tr>
+                <tr><td>G.I.Pipe</td><td>FNA-PE31002</td><td>Pipe, G.I. 114.3mm x 6m</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>G.I.Pipe</td><td>FNA-PE31030</td><td>Pipe, Riser Steel (GI); 4&quot;Ø x 10&#x27; (114mm x 3.05m)</td><td>PC</td><td>FNA-GL31030</td><td></td><td></td><td></td></tr>
+                <tr><td>G.I.Pipe (U)</td><td>FNA100391-1201</td><td>Metal U-Guard, 4 3/16&quot; x 8&#x27;</td><td>PC</td><td>FNA-PE19002</td><td></td><td></td><td></td></tr>
+                <tr><td>G.I.Pipe Coupling</td><td>FNA-PE32023</td><td>Coupling, G.I. pipe 114.3mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>G.I. Pipe Elbow</td><td>FNA-PE32024</td><td>Elbow, Pipe G.I. 114.3mm X 90 deg</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>G.I. Pipe Elbow</td><td>FNA-PE32025</td><td>Elbow, Pipe G.I. 114.3mm X 45 deg</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Flexible Pipe</td><td>FNA-PE31017</td><td>Flexible Hose, Plastic Type, 1&quot;Ø x 25m/roll (Orange)</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Flexible Pipe</td><td>FNA-PE31018</td><td>Flexible Hose, Plastic Type, 2&quot;Ø x 50m/roll (Orange)</td><td>M</td><td>FNA-PE31091</td><td></td><td></td><td></td></tr>
+                <tr><td>Weather Head Cap</td><td>FNA-PE51049</td><td>Weather Head Cap, 4&quot; (G.I.)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Weather Head Cap</td><td>FNA-PE51004</td><td>Entrance Cap, 50mm / Weather Head Cap, 50mm (G.I.)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>TAG</td><td>FNA-PE51093</td><td>Metal Embossing Tape, 12.7mm x 4.88mm (DYMO)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>Marker</td><td>FNA-PE45005</td><td>3M 1255 EMS Mini-Marker (Electronic Marker)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>UG Accessories</td><td>FNA-PE51075</td><td>Guide Rope, Nylon #12, 6mmØ x 200m/roll (Yellow)</td><td>M</td><td>FNA-PE51103</td><td></td><td></td><td></td></tr>
+                <tr><td>UG Accessories</td><td>FNA-PE51019</td><td>Warning Tape，For Cebu 178931/（032）2532626</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE51005</td><td>Foam Sealant</td><td>PC</td><td>FNA-GL51005</td><td></td><td></td><td></td></tr>
+                <tr><td>General Accessories</td><td>FNA-PE51002</td><td>Electrical Tape (Brand: 3M)</td><td>PC</td><td>FNAPE51121</td><td></td><td></td><td></td></tr>
+                <tr><td>UG Accessories</td><td>FNA-PE45003</td><td>MANHOLE Frame and COVER</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>UG Accessories</td><td>FNA-PE45001</td><td>Hook Rack, 10&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>UG Accessories</td><td>FNA-PE45002</td><td>Cable Back Rack, 762mm (18H)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>MH&amp;HH</td><td>KSSPH0400000168-FG</td><td>Basepad/Service Box for Pedestal LCP/NAP</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>MH&amp;HH</td><td>KSSPH0600000030-FG</td><td>Reinforced Concrete Manhole -(L:0.8m,W:0.8m,H:0.7m) for villa</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>MH&amp;HH</td><td>KSSPH0600000028-FG</td><td>Reinforced Concrete Manhole -(L:0.6m,W:0.6m,H:0.7m)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>MH&amp;HH</td><td>KSSPH0600000029-FG</td><td>Reinforced Concrete Manhole -(L:0.7m,W:0.7m,H:0.9m)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>MH&amp;HH</td><td>KSSPH0600000031-FG</td><td>Reinforced Concrete Manhole -(L:1.2m,W:1.2m,H:1.5m)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>MH&amp;HH</td><td>KSSPH0600000032-FG</td><td>SRH-4 Manhole (L:3.3m,W:2m,H:2.25m)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-1-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 1m</td><td>PC</td><td>FNA-PE22058</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-2-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 2m</td><td>PC</td><td>FNA-PE22059</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-3-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 3m</td><td>PC</td><td>FNA-PE22060</td><td>KSSPH0600000587</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-4-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 4m</td><td>PC</td><td>FNA-PE22061</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-5-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0mm LSZH 5m</td><td>PC</td><td>FNA-PE22104</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-6-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 6m</td><td>PC</td><td>FNA-PE22062</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-7-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 7m</td><td>PC</td><td>FNA-PE22063</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-8-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 8m</td><td>PC</td><td>FNA-PE22064</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-9-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 9m</td><td>PC</td><td>FNA-PE22065</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-10-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0mm LSZH 10m</td><td>PC</td><td>FNA-PE85046</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-13-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0MM LSZH 13m</td><td>PC</td><td>FNA-PE22107</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-15-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0mm LSZH 15m</td><td>PC</td><td>FNA-PE22105</td><td>KSSPH0600000588</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-20-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0mm LSZH 20m</td><td>PC</td><td>FNA-PE22018</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-25-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0mm LSZH 25m</td><td>PC</td><td>FNA-PE85049</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA726620-30-1201</td><td>Patchcord LC/UPC-LC/UPC Simplex SM 2.0mm LSZH 30m</td><td>PC</td><td>FNA-PE22106</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>3578393R1A</td><td>Patchcord LC/UPC-FC/UPC Simplex SM 2.0MM LSZH 1m</td><td>PC</td><td>FNA-PE22066</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-2-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 2m</td><td>PC</td><td>FNA-PE22042</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-3-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 3m</td><td>PC</td><td>FNA-PE22043</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-4-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 4m</td><td>PC</td><td>FNA-PE22044</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-5-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 5m</td><td>PC</td><td>FNA-PE22028</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-6-1201</td><td>Patchcord LC/UPC-FC/UPC Simplex SM 2.0MM LSZH 6m</td><td>PC</td><td>FNA-PE22135</td><td>FNA-PE22067</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-7-1201</td><td>Patchcord LC/UPC-FC/UPC Simplex SM 2.0MM LSZH 7m</td><td>PC</td><td>FNA-PE22136</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-8-1201</td><td>Patchcord LC/UPC-FC/UPC Simplex SM 2.0MM LSZH 8m</td><td>PC</td><td>FNA-PE22137</td><td>FNA-PE22069</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-9-1201</td><td>Patchcord LC/UPC-FC/UPC Simplex SM 2.0MM LSZH 9m</td><td>PC</td><td>FNA-PE22138</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-10-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 10m</td><td>PC</td><td>FNA-PE22025</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-13-1201</td><td>Patchcord LC/UPC-FC/UPC Simplex SM 2.0MM LSZH 13m</td><td>PC</td><td>FNA-PE22108</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-15-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 15m</td><td>PC</td><td>FNA-PE22026</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-20-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 20m</td><td>PC</td><td>FNA-PE22027</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722620-25-1201</td><td>Patchcord FC/UPC-LC/UPC Simplex SM 2.0mm LSZH 25m</td><td>PC</td><td>FNA-PE85125</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-1-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 1m</td><td>PC</td><td>FNA-PE22071</td><td>OCJJ000167-1</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-2-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 2m</td><td>PC</td><td>FNA-PE22039</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-3-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 3m</td><td>PC</td><td>FNA-PE22040</td><td>OCJJ000167-3</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-4-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 4m</td><td>PC</td><td>FNA-PE22041</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-5-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 5m</td><td>PC</td><td>FNA-PE22100</td><td>OCJJ000167-5</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-6-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 6m</td><td>PC</td><td>FNA-PE22036</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-7-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 7m</td><td>PC</td><td>FNA-PE22037</td><td>OCJJ000167-7</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-8-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 8m</td><td>PC</td><td>FNA-PE22038</td><td>OCJJ000167-8</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-9-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 9m</td><td>PC</td><td>FNA-PE22072</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-10-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0mm LSZH 10m</td><td>PC</td><td>FNA-PE85074</td><td>OCJJ000167-10</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-13-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0MM LSZH 13m</td><td>PC</td><td>FNA-PE22109</td><td>OCJJ000167-13</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-15-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0mm LSZH 15m</td><td>PC</td><td>FNA-PE22020</td><td>FNA-PE85051</td><td>OCJJ000167-15</td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-20-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0mm LSZH 20m</td><td>PC</td><td>FNA-PE22021</td><td>OCJJ000167-20</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724620-30-1201</td><td>Patchcord SC/UPC-LC/UPC Simplex SM 2.0mm LSZH 30m</td><td>PC</td><td>FNA-PE22101</td><td>OCJJ000167-30</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-1-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 1m</td><td>PC</td><td>FNA-PE22073</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-2-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 2m</td><td>PC</td><td>FNA-PE22045</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-3-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 3m</td><td>PC</td><td>FNA-PE22046</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-4-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 4m</td><td>PC</td><td>FNA-PE22047</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-5-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 5m</td><td>PC</td><td>FNA-PE22029</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-6-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 6m</td><td>PC</td><td>FNA-PE22074</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-7-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 7m</td><td>PC</td><td>FNA-PE22075</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-8-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 8m</td><td>PC</td><td>FNA-PE22076</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-9-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 9m</td><td>PC</td><td>FNA-PE22077</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-10-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 10m</td><td>PC</td><td>FNA-PE22030</td><td>KSSPH0600000584</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-13-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 13m</td><td>PC</td><td>FNA-PE22110</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-15-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 15m</td><td>PC</td><td>FNA-PE22031</td><td>KSSPH0600000585</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA-PE22096</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 20m</td><td>PC</td><td>FNA724220-20-1201</td><td>KSSPH0600000586</td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724220-25-1201</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 25m</td><td>PC</td><td>FNA-PE22033</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA-PE85033</td><td>Patchcord FC/UPC-SC/UPC Simplex SM 2.0MM LSZH 30m</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-1-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 1m</td><td>PC</td><td>FNA-PE22049</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-2-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 2m</td><td>PC</td><td>FNA-PE22078</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-3-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 3m</td><td>PC</td><td>FNA-PE22079</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-4-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 4m</td><td>PC</td><td>FNA-PE22080</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA-PE85110</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 5m</td><td>PC</td><td>FNA724420-5-1201</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-6-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 6m</td><td>PC</td><td>FNA-PE22081</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-7-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 7m</td><td>PC</td><td>FNA-PE22082</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-8-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 8m</td><td>PC</td><td>FNA-PE22083</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-9-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 9m</td><td>PC</td><td>FNA-PE22084</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-10-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 10m</td><td>PC</td><td>FNA-PE22034</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-13-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 13m</td><td>PC</td><td>FNA-PE22111</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA-PE85120</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 15m</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA724420-20-1201</td><td>Patchcord SC/UPC-SC/UPC Simplex SM 2.0MM LSZH 20m</td><td>PC</td><td>FNA-PE22035</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-1-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 1m</td><td>PC</td><td>FNA-PE22085</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-2-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 2m</td><td>PC</td><td>FNA-PE22086</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-3-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 3m</td><td>PC</td><td>FNA-PE22087</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-4-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 4m</td><td>PC</td><td>FNA-PE22088</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-5-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 5m</td><td>PC</td><td>FNA-PE22089</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-6-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 6m</td><td>PC</td><td>FNA-PE22090</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-7-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 7m</td><td>PC</td><td>FNA-PE22091</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-8-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 8m</td><td>PC</td><td>FNA-PE22092</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-9-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 9m</td><td>PC</td><td>FNA-PE22093</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-10-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 10m</td><td>PC</td><td>FNA-PE22094</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-13-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 13m</td><td>PC</td><td>FNA-PE22112</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-15-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 15m</td><td>PC</td><td>FNA-PE22095</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA722220-20-1201</td><td>Patchcord FC/UPC-FC/UPC Simplex SM 2.0MM LSZH 20m</td><td>PC</td><td>FNA-PE22096</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA700380-5-1201</td><td>Patchcord FC/UPC-FC/UPC Duplex SM 2.0mm LSZH 5m</td><td>PC</td><td>FNA-PE22151</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA700380-10-1201</td><td>Patchcord FC/UPC-FC/UPC Duplex SM 2.0mm LSZH 10m</td><td>PC</td><td>FNA-PE22154</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA700380-15-1201</td><td>Patchcord FC/UPC-FC/UPC Duplex SM 2.0mm LSZH 15m</td><td>PC</td><td>FNA-PE22155</td><td></td><td></td><td></td></tr>
+                <tr><td>PATCHCORD</td><td>FNA700380-20-1201</td><td>Patchcord FC/UPC-FC/UPC Duplex SM 2.0mm LSZH 20m</td><td>PC</td><td>FNA-PE22156</td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>FNA-PE11065</td><td>Expansion Bolt 3/8&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>FNAFG31099</td><td>Pipe, IMC 25mm x 3m/pc</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>KSSPH0400000169-FG</td><td>Coupling, IMC pipe 25mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>FNAFG17036</td><td>C-Clamp/U-Clamp 2 holes 1&quot;Ø</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>KSSPH0400000170-FG</td><td>Coupling, PVC pipe 25mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>FNAFG17035</td><td>4&quot;Ø P-Clamp</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>FNAFG17034</td><td>4&quot;Ø F-Clamp</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>PENDING</td><td>FNA100100-A-1201</td><td>Optical Junction Box (OJB) 4F</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE43016</td><td>Dymo Tape,6.1m\*127mm\*12.7/roll</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE51103</td><td>GuideRope,Nylon#12,10mmx200m/roll-Yellow</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PF23014</td><td>Aerial Closure, 2.2 x 19, Copper (3M)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PF26139</td><td>UY Connector (Brand: 3M)</td><td>PC</td><td>FNA-PE26139</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAPE16011</td><td>AWG# 26 x 20 Pairs FSF Copper Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAPE16013</td><td>AWG26，30 Pairs FSF Copper Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE16007</td><td>Wire, Lashing 1.2mm x 99M/roll</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>TL-OF100-FSF</td><td>Outdoor, 100P, FSF Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNAPE15019</td><td>CF-Rod, Thimble Eye Anchor5/8x8&#x27;(10m)</td><td>PC</td><td>FNA-PE15002</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAPE16014</td><td>AWG26，50 Pairs FSF Copper Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAPF23019</td><td>Mechanical closure 5×33（600-900pairs）</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>TL-OF200-FSF</td><td>Outdoor, 200P, FSF Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>TL-OF400-FSF</td><td>Outdoor, 400P, FSF Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PF23015</td><td>Aerial Closure, 2.6 x 29, Copper</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE33001</td><td>Duct Plug, Mechanical Blank, 114.3mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>GYFTC8Y-48-V</td><td>FOC, 48 Core, Figure 8</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG31102</td><td>Pipe, HDPE SDR11 32mm x 250m/roll (Black)</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG31101</td><td>Pipe, HDPE SDR11 32mm x 250m/roll (Yellow)</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG32090</td><td>Steel Flat Bar, 1/4&quot; x 2&quot; x 20&#x27;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA200215-A-1201</td><td>144F ODF (Rack mounted)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>GYFTS-144-V</td><td>Fiber Optical Cable (FOC), 144, Armoured</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>GYFTS-72-V</td><td>Fiber Optical Cable (FOC), 72, Armoured</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAPE16012</td><td>AWG26，10 Pairs FSF Copper Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE45028</td><td>Manhole Frame and Cover 900mm (0.9dia)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAPE16015</td><td>AWG26，70 Pairs FSF Copper Cable</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG44038</td><td>DP BOX without Stub 10 pairs 25.5\*20cm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG44041</td><td>DP BOX with Stub 20 pairs 35.2\*20cm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0400000163</td><td>Coupling, Compression HDPE 118mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG43022</td><td>Aluminum Manhole Tag 360 x 80mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA600613-15-1201</td><td>PLC-B-116-N15-SU-C-1201</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG19067</td><td>CF-Loop Holder Guide</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFG32089</td><td>Jack moon Simplex, 114mm fabricated</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0200000535-FG</td><td>Protection Sleeve-FPS6(For Ribbon Fiber)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100435-1200</td><td>WiCF-Strap,Stainless Steel3/4&quot; -120</td><td>M</td><td>FN-209900008T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100434-1200</td><td>WiCF-Strap, Stainless Steel1/2&quot; -120</td><td>M</td><td>FNA-PE41005</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE31055</td><td>FlexibleMetalConduit,LiquidTight(2)</td><td>M</td><td>FNA-PE31019</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100393-1201</td><td>CF-Suspension Clamp, Curved</td><td>PC</td><td>FNA-PE17003</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0400000012-FG</td><td>Concrete Poles, 5m (25ft), Class 7A (Round) - PLDT Standard</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNAFG12040</td><td>Clamp, Pole, R/L Type 5/8&quot; x 8&quot; - 9&quot;, w/ Bolts and Nuts</td><td>PC</td><td>FNA-PE12040</td><td>FNA-PE12038</td><td>FN-200100004T1201</td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNAFG13020</td><td>Insulator Strain No. 506 (10m)</td><td>PC</td><td>FNA-PE13009</td><td></td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNA100394-1201</td><td>Guy Wire Protector, 7&#x27; x 2.13m, Full Round, Steel</td><td>PC</td><td>FNA-PE13011</td><td>FNAPE13019</td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNAFG14006</td><td>Guy Grip, 3/8&quot;</td><td>PC</td><td>FNA-PE14010</td><td></td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNA-PE15010</td><td>Anchor Block, Concrete (3,000 PSI)</td><td>PC</td><td>FNA-GL15010</td><td>FNACC13001</td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNA100405-1206</td><td>Wire, Messenger 3/8&quot; (0.96cm)</td><td>M</td><td>FNA-PE16004</td><td>FNA-GL16004</td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNA100545-1201</td><td>Bolt, Machine 5/8&quot; x 5&quot; Full Thread / 12.5cm w/ Square Nut</td><td>PC</td><td>FNA-PE11002</td><td></td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNAPE19062</td><td>Brace Back 6&#x27;</td><td>PC</td><td>FNA-PE13007</td><td></td><td></td><td></td></tr>
+                <tr><td>NEW GUYING物料（暂时可不填）</td><td>FNA100546-1201</td><td>Brace Diagonal 7&#x27;</td><td>PC</td><td>FNA100392-1201</td><td>FNA-PE13008</td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100392-1201</td><td>CF-Brace Diagonal 7&#x27;</td><td>PC</td><td>FNA-PE13008</td><td>FNA100546-1201</td><td></td><td></td></tr>
+                <tr><td></td><td>GYFTC8Y-144-V</td><td>FOC, 144F CORE, Fig 8 Cable</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE32028</td><td>Straight connector with nut for liquid tight flexible metal conduit for 50mm</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE51073</td><td>Plyboard (8 x 4 x3/4)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-PE31091</td><td>Flexible Metal Conduit, Liquid Tight 50mm x 50m/roll</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAGL31001</td><td>3‐Way Micro‐duct (12/8 mm)\_GT</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSTH0600000041</td><td>Manhole ID</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100653</td><td>Fan Out Assembly(8F)</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>M1H1272200060001-V</td><td>Invisible Cable Multi-core (12F)</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>YXGL000007</td><td>Multi-core(lower) Invisible Cable Track</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100656-A-1201</td><td>POE Termination Box</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100658-1201</td><td>Micro POE Termination Box</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100654</td><td>菲律宾PLDT布缆小车 CABLE ROUTING TOOL（消耗品，每季度全部更换）</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100655</td><td>菲律宾PLDT 剥线器 CABLE JACKET STRIPPER（消耗品，每季度全部更换）</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA703156-1201</td><td>菲律宾PLDT 多芯FIC</td><td>PC</td><td>FN-170400006T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA300005-24-1201</td><td>24 Closure (Mechanical)</td><td>PC</td><td>FNA300330-24-1201</td><td>FN-120800011-24T1201</td><td>FN-120800010-24T1201</td><td></td></tr>
+                <tr><td></td><td>FN-140500016-E001T1201</td><td>Fiber Distribution Box</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FN-150600004-E001T1201</td><td>Indoor HUB BOX</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FN-159900017-E001T1201</td><td>Indoor END BOX</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FN-159900018-E001T1201</td><td>Indoor SUB BOX</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>YPO20250325B202-Y01</td><td>ATB</td><td>PC</td><td>FNA100724-1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>UH1271B2034518-VS</td><td>LIGHT CABLE FLATTISH AER FOC 12F</td><td>KM</td><td>U2H1269380680001-V</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FN-180100181-20-1201</td><td>prefab-20m</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>YXGL000005</td><td>Single-core invisible track</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA-CI44016</td><td>Junction Box（8.5\*8.5\*5）</td><td>KM</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0600000600</td><td>Flexible Metal Conduit, 1/2 inch</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA400455-1206</td><td>V/FDP-410D-3-S-P5-A1-412-1206</td><td>PC</td><td>FN-140500007T1206</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA400858-1206</td><td>V/FitDP-410D-3-S-P5-A2-412-1206</td><td>PC</td><td>FN-140500008T1206</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FN-170400006-1201</td><td>V/FIC-SC/UPC-S-1201</td><td>PC</td><td>FN-170400006T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFM19045</td><td>V/Fiber cable plastic clip (outdoor)</td><td>PC</td><td>FN-200400026T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFM19048</td><td>V/CF-Metal Screw With Tox ST3.9×38-6×30</td><td>PC</td><td>FN-200400028T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFM42032</td><td>V/CF－Cable Tie Ribbon 80mmｘ2．5mm white</td><td>PC</td><td>FN-210300002T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNAFM17023</td><td>V/CF－Clamp，Span T－C</td><td>PC</td><td>FN-200400029T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA700181</td><td>AD-SC/APC-S</td><td>PC</td><td>FNA730300</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA702470-1201</td><td>Filed installable connector</td><td>PC</td><td>FN-170400004T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA400788-A-1102</td><td></td><td></td><td>FN-140500004-E001T1102</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA703048-100-1201</td><td>Pre-Fabricated Drop cable 100M</td><td>PC</td><td>FN-190200027-100T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA703048-50-1201</td><td>Pre-Fabricated Drop cable 50M</td><td>PC</td><td>FN-190200027-50T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA703048-75-1201</td><td>Pre-Fabricated Drop cable 75M</td><td>PC</td><td>FN-190200027-75T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA703048-25-1201</td><td>Pre-Fabricated Drop cable 25M</td><td>PC</td><td>FN-190200027-25T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100724-A-1201</td><td>FitTB-501-B-P3-D01-DW-1201</td><td>PC</td><td>FN-150100001-E001T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA100724-1201</td><td>V/FitTB-501-B-P3-D01-DW-1201</td><td>PC</td><td>FN-150100001T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA700452-PLDT</td><td>Fiber Clamp Drop</td><td>PC</td><td>FN-200400013T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>FNA700243-2</td><td>Bend Insensitive Fiber Patch Cord</td><td>PC</td><td>FN-180100078-2T1201</td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0600000619</td><td>Coupling, Straight Connector 1/2inc w/ Nut for Flexible Metal Conduit Coupling 1/2inc</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0600000620</td><td>Proposed Plastic Moulding 1&quot;Ø</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0600000635</td><td>Clevis Hanger Loop, 1&quot;</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0600000636</td><td>C-Clamp/U-Clamp 2 holes 1/2&quot;Ø</td><td>PC</td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td>KSSPH0600000841</td><td>Micro Duct 12mm</td><td>M</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<div class="no-result" id="noResult">No material found.</div>
+</section>
+</main>
+<script>
+const searchInput=document.getElementById("searchInput");
+const materialTable=document.getElementById("materialTable");
+const resultInfo=document.getElementById("resultInfo");
+const noResult=document.getElementById("noResult");
+
+function searchMaterials(){
+    const search=searchInput.value.trim().toLowerCase();
+    const rows=materialTable.querySelectorAll("tr");
+    let visibleCount=0;
+    rows.forEach(row=>{
+        const code=row.cells[1]?.textContent.toLowerCase()||"";
+        const description=row.cells[2]?.textContent.toLowerCase()||"";
+        const match=!search || code.includes(search) || description.includes(search);
+        row.style.display=match?"":"none";
+        if(match) visibleCount++;
+    });
+    resultInfo.textContent=search
+        ? `${visibleCount} material(s) found`
+        : `Showing all materials (${visibleCount})`;
+    noResult.style.display=visibleCount===0?"block":"none";
+}
+searchInput.addEventListener("input",searchMaterials);
+window.addEventListener("DOMContentLoaded",searchMaterials);
+</script>
+</body>
+</html>
