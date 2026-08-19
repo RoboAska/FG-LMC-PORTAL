@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            background: #f5f6f8;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .home-btn,
+        .search-btn {
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .home-btn {
+            background: #333;
+            color: white;
+            text-decoration: none;
+        }
+
+        .search-area {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .search-area input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .search-btn {
+            background: #1769aa;
+            color: white;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #1769aa;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <h1>Material List</h1>
+
+        <!-- HOME BUTTON -->
+        <a href="dashboard.html" class="home-btn">Home</a>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-area">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search material code or description..."
+        >
+
+        <button class="search-btn" onclick="searchMaterials()">
+            Search
+        </button>
+    </div>
+
+    <!-- MATERIAL LIST -->
+    <div class="table-container">
+
+        <table id="materialTable">
+
+            <thead>
+                <tr>
+                    <th>MATERIAL CODE</th>
+                    <th>MATERIAL DESCRIPTION</th>
+                    <th>UOM</th>
+                    <th>REMARKS</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>FNA-PE34001</td>
+                    <td>Smart Ladder Rack with Horizontal Installation Accessories 300mm wide</td>
+                    <td>METER</td>
+                    <td>Divisible by 3 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE31008</td>
+                    <td>Pipe, PVC for Spiralling (black)</td>
+                    <td>METER</td>
+                    <td>Divisible by 4 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51075</td>
+                    <td>Guide Rope, Nylon #12, 6mmØ x 200m/roll (Yellow)</td>
+                    <td>METER</td>
+                    <td>Divisible by 200 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51092</td>
+                    <td>Guide Rope, Nylon #12, 12mm x 200m/roll (Blue)</td>
+                    <td>METER</td>
+                    <td>Divisible by 200 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51103</td>
+                    <td>Guide Rope, Nylon #12, 10mmØ x 200m/roll (Yellow)</td>
+                    <td>METER</td>
+                    <td>Divisible by 200 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNAGL23022</td>
+                    <td>Guide Rope, Nylon #12, 6mmØ x 200m/roll (Yellow)</td>
+                    <td>METER</td>
+                    <td>Divisible by 200 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNAFG51139</td>
+                    <td>Guide Rope, Nylon #8, 4x200-Yellow</td>
+                    <td>METER</td>
+                    <td>Divisible by 200 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNAPE32082</td>
+                    <td>Warning Tape for Dasma</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51019</td>
+                    <td>Warning Tape, For Cebu 178931 / (032) 2532626</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51057</td>
+                    <td>Warning Tape for Mindoro 17883 / (043) 7230075</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51090</td>
+                    <td>Warning Tape, For GMM 178931 / 02-5551724</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51094</td>
+                    <td>Warning Tape, For Pampanga 178-741</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51095</td>
+                    <td>Warning Tape, For Bulacan 178-734 / (044) 7910600</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51096</td>
+                    <td>Warning Tape, For Cagayan 178-732 / (078) 8442300</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51097</td>
+                    <td>Warning Tape, For Tarlac (045) 982-1200</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51098</td>
+                    <td>Warning Tape, Ilocos 178-714 / (077) 674-2336</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51100</td>
+                    <td>Warning Tape, Nueva Ecija (044) 940-9998</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51101</td>
+                    <td>Warning Tape, For Bataan 178-744</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51102</td>
+                    <td>Warning Tape, Nondetectable (6" x 305m) - Yellow, Old</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51104</td>
+                    <td>Warning Tape, For Isabela (078) 624-2055</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51105</td>
+                    <td>Warning Tape, Pangasinan (075) 615-0007</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51106</td>
+                    <td>Warning Tape, GMM East (02)3709907/5712583</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51107</td>
+                    <td>Warning Tape, GMM West 555-1724/555-1714</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51108</td>
+                    <td>Warning Tape, GMM North (02)5337579/2777069</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE51109</td>
+                    <td>Warning Tape, GMM South 370-4019/8389572</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNAPE51116</td>
+                    <td>Warning Tape, For Samar 178941 / 178943</td>
+                    <td>METER</td>
+                    <td>Divisible by 500 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>PMF00284</td>
+                    <td>Heat shrinkable tubing Φ18</td>
+                    <td>METER</td>
+                    <td>Divisible by 4 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE31021</td>
+                    <td>Spiral Sleeve, 1/2" x 10m/roll (Black)</td>
+                    <td>METER</td>
+                    <td>Divisible by 10 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE31080</td>
+                    <td>Pipe, HDPE SDR11 118mmx50M (Black) PLDT</td>
+                    <td>METER</td>
+                    <td>Divisible by 50 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE31081</td>
+                    <td>Pipe, HDPE SDR11 118mmx50M (Yellow) PLDT</td>
+                    <td>METER</td>
+                    <td>Divisible by 50 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PF51033</td>
+                    <td>JumperWire, 2C/24 AWG (B/W) 150m/roll</td>
+                    <td>METER</td>
+                    <td>Divisible by 150 meters per request</td>
+                </tr>
+
+                <tr>
+                    <td>FNAPE32081</td>
+                    <td>3-Way Micro-duct (12/8 mm)</td>
+                    <td>METER</td>
+                    <td>CUT CABLE ARE NOT ALLOW (ISSUED per reel)</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE22146</td>
+                    <td>Cable, Fiber Optic, 4F, Fig.8, Drop Cable (YH047121F5B8-V)</td>
+                    <td>METER</td>
+                    <td>CUT CABLE ARE NOT ALLOW (ISSUED per reel)</td>
+                </tr>
+
+                <tr>
+                    <td>FNA-PE85109</td>
+                    <td>1-Fiber Fig 8 Drop Cable</td>
+                    <td>METER</td>
+                    <td>CUT CABLE ARE NOT ALLOW (ISSUED per reel)</td>
+                </tr>
+
+                <tr>
+                    <td>YH047121F5B8-V</td>
+                    <td>Drop Cable 4 F, G.657A1 with messenger</td>
+                    <td>KM</td>
+                    <td>CUT CABLE ARE NOT ALLOW (ISSUED per reel)</td>
+                </tr>
+
+                <tr>
+                    <td>YH027121F5B8-V</td>
+                    <td>Cable, Fiber Optic, 2F, Fig. 8, Drop Cable</td>
+                    <td>KM</td>
+                    <td>CUT CABLE ARE NOT ALLOW (ISSUED per reel)</td>
+                </tr>
+
+                <tr>
+                    <td>YH047121F5B8-VS</td>
+                    <td>Drop Cable 4 F, G.657A1 with messenger</td>
+                    <td>KM</td>
+                    <td>CUT CABLE ARE NOT ALLOW (ISSUED per reel)</td>
+                </tr>
+
+                <tr>
+                    <td>YH017121F5B8-V</td>
+                    <td>1-Fiber Figure 8 Drop Cable LSZH</td>
+                    <td>KM</td>
+                    <td>CUT CABLE ARE NOT ALLOW (ISSUED per reel)</td>
+                </tr>
+
+                <tr>
+                    <td>FNA100295</td>
+                    <td>V/CF-Strap, Stainless Steel 5/8"</td>
+                    <td>METER</td>
+                    <td>Should be whole number</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p id="noResults" class="no-results">
+            No materials found.
+        </p>
+
+    </div>
+</div>
+
+
+<script>
+
+function searchMaterials() {
+
+    const input = document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const rows = document.querySelectorAll("#materialTable tbody tr");
+
+    let found = false;
+
+    rows.forEach(row => {
+
+        const code = row.cells[0].textContent.toLowerCase();
+        const description = row.cells[1].textContent.toLowerCase();
+
+        if (
+            code.includes(input) ||
+            description.includes(input)
+        ) {
+            row.style.display = "";
+            found = true;
+        } else {
+            row.style.display = "none";
+        }
+
+    });
+
+    document.getElementById("noResults").style.display =
+        found ? "none" : "block";
+}
+
+</script>
+
+</body>
+</html>
