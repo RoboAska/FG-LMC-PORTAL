@@ -30,7 +30,7 @@ const locations = [
         longitude: 120.9934,
 
         contactPerson:
-            "RHEA FIDELIA",
+            "Rhea Fidelia",
 
         contactNumber:
             "09622117247",
