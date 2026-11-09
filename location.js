@@ -72,39 +72,6 @@ const locations = [
 
     },
 
-
-    {
-        id: 3,
-
-        whName: "MRT PAMPANGA",
-
-        whCode: "1023",
-
-        district: "Pampanga",
-
-        type: "WAREHOUSE",
-
-        area: "NLZ",
-
-        exactLocation:
-            "Lot 23A & Lot 23B, Global Aseana Business Park, Quezon Road, San Fernando, Pampanga",
-
-        latitude: 15.015389,
-
-        longitude: 120.740094,
-
-        contactPerson:
-            "Regino E. Carlos",
-
-        contactNumber:
-            "09513054951",
-
-        email:
-            "shania.campo@meritar.cn"
-
-    },
-
-
     {
         id: 4,
 
