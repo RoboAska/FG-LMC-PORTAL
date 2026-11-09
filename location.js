@@ -39,8 +39,6 @@ const locations = [
             "fiberhome_bicol@aai.com.ph"
 
     },
-
-
     {
         id: 2,
 
@@ -73,7 +71,7 @@ const locations = [
     },
 
     {
-        id: 4,
+        id: 3,
 
         whName: "INTELUCK-BULACAN",
 
@@ -105,7 +103,7 @@ const locations = [
 
 
     {
-        id: 5,
+        id: 4,
 
         whName: "BULACAN",
 
@@ -137,7 +135,7 @@ const locations = [
 
 
     {
-        id: 6,
+        id: 5,
 
         whName: "MRT-CEBU 2",
 
@@ -169,7 +167,7 @@ const locations = [
 
 
     {
-        id: 7,
+        id: 6,
 
         whName: "MRT BACOLOD",
 
@@ -201,7 +199,7 @@ const locations = [
 
 
     {
-        id: 8,
+        id: 7,
 
         whName: "IPG DAVAO",
 
